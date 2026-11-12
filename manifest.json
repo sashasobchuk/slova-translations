@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "files": {
+    "uk": {
+      "path": "uk.ts",
+      "md5": "6c43aeaea96368e7756037fc51d147f9",
+      "size": 198121
+    },
+    "am": {
+      "path": "languages/am.ts",
+      "md5": "ee56ebb169e1a46a0012d0c4e58d1f50",
+      "size": 193114
+    },
+    "ar": {
+      "path": "languages/ar.ts",
+      "md5": "b6ac9792b776ce0f821744d203e30cfc",
+      "size": 183709
+    },
+    "bn": {
+      "path": "languages/bn.ts",
+      "md5": "8c72978c75ef3f0a6082a408837a87c6",
+      "size": 250922
+    },
+    "cs": {
+      "path": "languages/cs.ts",
+      "md5": "e38d4a421c38d734559b6514d3bdf834",
+      "size": 147768
+    },
+    "de": {
+      "path": "languages/de.ts",
+      "md5": "431f2129bc572332080a185880972f06",
+      "size": 157081
+    },
+    "en": {
+      "path": "languages/en.ts",
+      "md5": "7ba77f6c74f02c48a70bba8f832c9270",
+      "size": 144878
+    },
+    "es": {
+      "path": "languages/es.ts",
+      "md5": "212c23893c1ae29ca136bfc15fa51d9c",
+      "size": 155309
+    },
+    "fa": {
+      "path": "languages/fa.ts",
+      "md5": "2e7294a2ff589af1a94ed455052f4e7f",
+      "size": 190537
+    },
+    "fil": {
+      "path": "languages/fil.ts",
+      "md5": "fd3529854fac4633586717f88a99d185",
+      "size": 142510
+    },
+    "fr": {
+      "path": "languages/fr.ts",
+      "md5": "12f44ab5550e45200dac5d22de90e04c",
+      "size": 155502
+    },
+    "ha": {
+      "path": "languages/ha.ts",
+      "md5": "9539913c9117c1635d583f950dbd993f",
+      "size": 146251
+    },
+    "he": {
+      "path": "languages/he.ts",
+      "md5": "33fef48f3833cf0728513adfe286b91b",
+      "size": 168643
+    },
+    "hi": {
+      "path": "languages/hi.ts",
+      "md5": "d246b107f89af7c8b35b1bd49b77ab13",
+      "size": 250749
+    },
+    "it": {
+      "path": "languages/it.ts",
+      "md5": "88e48490b2d9cd40a659179526a1e94d",
+      "size": 145501
+    },
+    "ja": {
+      "path": "languages/ja.ts",
+      "md5": "990901951e5de1d42f1e7c75b01bd381",
+      "size": 162643
+    },
+    "jv": {
+      "path": "languages/jv.ts",
+      "md5": "99062904fbced67cee4137d127a56d8a",
+      "size": 142873
+    },
+    "kk": {
+      "path": "languages/kk.ts",
+      "md5": "2fab4af09ce871c47d187506669e3c21",
+      "size": 206919
+    },
+    "ko": {
+      "path": "languages/ko.ts",
+      "md5": "c3676b3b3de231ba51eefd4c9130fc03",
+      "size": 158113
+    },
+    "ku": {
+      "path": "languages/ku.ts",
+      "md5": "aee4c1443abf2ce84d01031f57f0cb35",
+      "size": 152024
+    },
+    "mr": {
+      "path": "languages/mr.ts",
+      "md5": "2169d48faa8745cb8d4279a3d00ec384",
+      "size": 250057
+    },
+    "nl": {
+      "path": "languages/nl.ts",
+      "md5": "aa164fd5e0399d910a5cf13bdd9fdaca",
+      "size": 142562
+    },
+    "no": {
+      "path": "languages/no.ts",
+      "md5": "4d545913d4f01f23edac86cf72a34a3c",
+      "size": 145553
+    },
+    "pl": {
+      "path": "languages/pl.ts",
+      "md5": "14425cc5a01d30adacbc9396022bf37f",
+      "size": 151656
+    },
+    "pnb": {
+      "path": "languages/pnb.ts",
+      "md5": "5a0d46dc4e92e6a758aa5a3ba2861b03",
+      "size": 187376
+    },
+    "pt": {
+      "path": "languages/pt.ts",
+      "md5": "d1f3b0f89e17455fd9efd2ea32190afb",
+      "size": 153901
+    },
+    "ro": {
+      "path": "languages/ro.ts",
+      "md5": "abe29c82f852275555c196b0a6a17949",
+      "size": 154674
+    },
+    "ru": {
+      "path": "languages/ru.ts",
+      "md5": "47f014c6efd9e23029f84b11dc0edf02",
+      "size": 198996
+    },
+    "sv": {
+      "path": "languages/sv.ts",
+      "md5": "d06516f800f2915c4d238d72289e8786",
+      "size": 141195
+    },
+    "sw": {
+      "path": "languages/sw.ts",
+      "md5": "c0943c51de2394e4b439bf4b0c759e9d",
+      "size": 148085
+    },
+    "te": {
+      "path": "languages/te.ts",
+      "md5": "a2c5076c8c7981e55c6b83df47c1a586",
+      "size": 271120
+    },
+    "th": {
+      "path": "languages/th.ts",
+      "md5": "d2cb82545a8f527e41d7094e7ad96903",
+      "size": 248689
+    },
+    "tr": {
+      "path": "languages/tr.ts",
+      "md5": "53ffe322f95533335805e3866a1f9aa2",
+      "size": 150175
+    },
+    "vi": {
+      "path": "languages/vi.ts",
+      "md5": "469676b7424019764f29f2e826244a19",
+      "size": 168477
+    },
+    "yo": {
+      "path": "languages/yo.ts",
+      "md5": "e883f39ed31fb4dc9fb30d0e6b228fb8",
+      "size": 178218
+    },
+    "zh-Hans": {
+      "path": "languages/zh-Hans.ts",
+      "md5": "619cfee629213b1b51ba309f5f79a6ed",
+      "size": 138009
+    },
+    "zh-Hant": {
+      "path": "languages/zh-Hant.ts",
+      "md5": "f15ab86b55815b158dbb1a9d0cdd40e6",
+      "size": 138509
+    }
+  }
+}

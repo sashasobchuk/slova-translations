@@ -1,0 +1,2 @@
+# LF скрізь: md5 у manifest.json рахується від байтів файлу, CRLF його зламав би
+* text=auto eol=lf

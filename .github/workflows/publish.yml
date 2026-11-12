@@ -1,0 +1,52 @@
+# Перевірка перекладів → manifest.json → скидання кешу jsDelivr.
+# Застосунок качає файли з jsDelivr (@main) і raw.githubusercontent.com, звіряючи md5 з manifest.json.
+name: publish
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Той самий парсер, що й у застосунку. Помилка → manifest не оновлюється, юзери лишаються на попередній версії.
+      - name: Validate
+        run: node tools/validate.mjs
+
+      - name: Generate manifest
+        run: node tools/manifest.mjs
+
+      - name: Commit manifest
+        run: |
+          if git diff --quiet -- manifest.json; then
+            echo "manifest.json unchanged"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add manifest.json
+            git commit -m "chore: update manifest.json [skip ci]"
+            git push
+          fi
+
+      # jsDelivr кешує @main до 12 год — скидаємо кеш усіх файлів перекладів і manifest
+      - name: Purge jsDelivr
+        run: |
+          paths=$(node -e "const m=require('./manifest.json');console.log(['manifest.json',...Object.values(m.files).map(f=>f.path)].join('\n'))")
+          for p in $paths; do
+            curl -s -o /dev/null -w "%{http_code} $p\n" "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/$p" || true
+          done

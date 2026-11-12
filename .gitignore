@@ -1,0 +1,13 @@
+# Whitelist: у репо лише переклади та їх інструменти.
+# Решта файлів теки (скрипти міграцій, промпти, translations.ts, trans/) живе тільки локально.
+/*
+!/.gitignore
+!/.gitattributes
+!/CLAUDE.md
+!/uk.ts
+!/index.ts
+!/types.d.ts
+!/manifest.json
+!/languages/
+!/tools/
+!/.github/
