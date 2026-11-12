@@ -8,28 +8,28 @@
     },
     "am": {
       "path": "languages/am.ts",
-      "md5": "ee56ebb169e1a46a0012d0c4e58d1f50",
-      "size": 193114
+      "md5": "15c0cfa7c70f6c69159b6ff73fcc1425",
+      "size": 193111
     },
     "ar": {
       "path": "languages/ar.ts",
-      "md5": "b6ac9792b776ce0f821744d203e30cfc",
-      "size": 183709
+      "md5": "01fdef5526a7f357534200e89c1b1586",
+      "size": 183706
     },
     "bn": {
       "path": "languages/bn.ts",
-      "md5": "8c72978c75ef3f0a6082a408837a87c6",
-      "size": 250922
+      "md5": "b2aed9fe578d3196970046001f9624e3",
+      "size": 250919
     },
     "cs": {
       "path": "languages/cs.ts",
-      "md5": "e38d4a421c38d734559b6514d3bdf834",
-      "size": 147768
+      "md5": "2e5772c3f14d7a7940923b09ea68e512",
+      "size": 147765
     },
     "de": {
       "path": "languages/de.ts",
-      "md5": "431f2129bc572332080a185880972f06",
-      "size": 157081
+      "md5": "6b44d0b763ea909acf7824a689eb9e27",
+      "size": 157078
     },
     "en": {
       "path": "languages/en.ts",
@@ -38,153 +38,153 @@
     },
     "es": {
       "path": "languages/es.ts",
-      "md5": "212c23893c1ae29ca136bfc15fa51d9c",
-      "size": 155309
+      "md5": "5dc74fc3ecd7530bc5eef5ee5e361526",
+      "size": 155306
     },
     "fa": {
       "path": "languages/fa.ts",
-      "md5": "2e7294a2ff589af1a94ed455052f4e7f",
-      "size": 190537
+      "md5": "796def36b8cff1a4c47de5b3b0072846",
+      "size": 190534
     },
     "fil": {
       "path": "languages/fil.ts",
-      "md5": "fd3529854fac4633586717f88a99d185",
-      "size": 142510
+      "md5": "73abe47a3978efdc24bed59c6ebb76e9",
+      "size": 142507
     },
     "fr": {
       "path": "languages/fr.ts",
-      "md5": "12f44ab5550e45200dac5d22de90e04c",
-      "size": 155502
+      "md5": "5f19ca0073e000a254ef2ae637f4b6bb",
+      "size": 155499
     },
     "ha": {
       "path": "languages/ha.ts",
-      "md5": "9539913c9117c1635d583f950dbd993f",
-      "size": 146251
+      "md5": "67e2bfec63b1d36ba78a408b30c8c46e",
+      "size": 146248
     },
     "he": {
       "path": "languages/he.ts",
-      "md5": "33fef48f3833cf0728513adfe286b91b",
-      "size": 168643
+      "md5": "d1d3fb5a7b42623290f065e730991246",
+      "size": 168640
     },
     "hi": {
       "path": "languages/hi.ts",
-      "md5": "d246b107f89af7c8b35b1bd49b77ab13",
-      "size": 250749
+      "md5": "5221057f876994c1fd12c1514780a876",
+      "size": 250746
     },
     "it": {
       "path": "languages/it.ts",
-      "md5": "88e48490b2d9cd40a659179526a1e94d",
-      "size": 145501
+      "md5": "cdd6536397940f38e4e78bdd1a50b276",
+      "size": 145498
     },
     "ja": {
       "path": "languages/ja.ts",
-      "md5": "990901951e5de1d42f1e7c75b01bd381",
-      "size": 162643
+      "md5": "648abd583cf54866353981cb98bb9e34",
+      "size": 162640
     },
     "jv": {
       "path": "languages/jv.ts",
-      "md5": "99062904fbced67cee4137d127a56d8a",
-      "size": 142873
+      "md5": "7265833893d7e2a01cd9e5c4a245f78e",
+      "size": 142870
     },
     "kk": {
       "path": "languages/kk.ts",
-      "md5": "2fab4af09ce871c47d187506669e3c21",
-      "size": 206919
+      "md5": "8a722e1d7c2a9bca1a283d8e2a842762",
+      "size": 206916
     },
     "ko": {
       "path": "languages/ko.ts",
-      "md5": "c3676b3b3de231ba51eefd4c9130fc03",
-      "size": 158113
+      "md5": "c9aa63df71e690f08ac67c4f4d26c7a1",
+      "size": 158110
     },
     "ku": {
       "path": "languages/ku.ts",
-      "md5": "aee4c1443abf2ce84d01031f57f0cb35",
-      "size": 152024
+      "md5": "1609fafaf37632f3ce98b0bdd7eae0e8",
+      "size": 152021
     },
     "mr": {
       "path": "languages/mr.ts",
-      "md5": "2169d48faa8745cb8d4279a3d00ec384",
-      "size": 250057
+      "md5": "3e18cbfcb2386e0cc0109dffda3ff4c8",
+      "size": 250054
     },
     "nl": {
       "path": "languages/nl.ts",
-      "md5": "aa164fd5e0399d910a5cf13bdd9fdaca",
-      "size": 142562
+      "md5": "20a74271e0ce7e3920044aadd7333b58",
+      "size": 142559
     },
     "no": {
       "path": "languages/no.ts",
-      "md5": "4d545913d4f01f23edac86cf72a34a3c",
-      "size": 145553
+      "md5": "ff2be28c684ed9b4ddc3a8ca898d1587",
+      "size": 145550
     },
     "pl": {
       "path": "languages/pl.ts",
-      "md5": "14425cc5a01d30adacbc9396022bf37f",
-      "size": 151656
+      "md5": "98307f91bda716340c47dac4da2670f3",
+      "size": 151653
     },
     "pnb": {
       "path": "languages/pnb.ts",
-      "md5": "5a0d46dc4e92e6a758aa5a3ba2861b03",
-      "size": 187376
+      "md5": "7ef537726e67a22a3b77cfd79bc87a6f",
+      "size": 187373
     },
     "pt": {
       "path": "languages/pt.ts",
-      "md5": "d1f3b0f89e17455fd9efd2ea32190afb",
-      "size": 153901
+      "md5": "975bbb96b0eac3bb0f6a20243352a727",
+      "size": 153898
     },
     "ro": {
       "path": "languages/ro.ts",
-      "md5": "abe29c82f852275555c196b0a6a17949",
-      "size": 154674
+      "md5": "d4fdec700975e7c564f544b2cf1ed36d",
+      "size": 154671
     },
     "ru": {
       "path": "languages/ru.ts",
-      "md5": "47f014c6efd9e23029f84b11dc0edf02",
-      "size": 198996
+      "md5": "f0dd6f8f239d7d2d293ee0eabee2eeb6",
+      "size": 198993
     },
     "sv": {
       "path": "languages/sv.ts",
-      "md5": "d06516f800f2915c4d238d72289e8786",
-      "size": 141195
+      "md5": "b54f28036ae3da5f14db1faf85f3e848",
+      "size": 141192
     },
     "sw": {
       "path": "languages/sw.ts",
-      "md5": "c0943c51de2394e4b439bf4b0c759e9d",
-      "size": 148085
+      "md5": "1643530ef3ca0c67516f3703a3c38285",
+      "size": 148082
     },
     "te": {
       "path": "languages/te.ts",
-      "md5": "a2c5076c8c7981e55c6b83df47c1a586",
-      "size": 271120
+      "md5": "8e17fc820aa4cee16df80f4893295b5c",
+      "size": 271117
     },
     "th": {
       "path": "languages/th.ts",
-      "md5": "d2cb82545a8f527e41d7094e7ad96903",
-      "size": 248689
+      "md5": "6e10df2ef3bc994ee2f9d943f979f604",
+      "size": 248686
     },
     "tr": {
       "path": "languages/tr.ts",
-      "md5": "53ffe322f95533335805e3866a1f9aa2",
-      "size": 150175
+      "md5": "c9325059155037b5fd0ab417704ab8b2",
+      "size": 150172
     },
     "vi": {
       "path": "languages/vi.ts",
-      "md5": "469676b7424019764f29f2e826244a19",
-      "size": 168477
+      "md5": "a54c65af482874b824d24ce5ea9e266d",
+      "size": 168474
     },
     "yo": {
       "path": "languages/yo.ts",
-      "md5": "e883f39ed31fb4dc9fb30d0e6b228fb8",
-      "size": 178218
+      "md5": "e33dfd41bef6eb7ef9ca2ed0a822b1ae",
+      "size": 178215
     },
     "zh-Hans": {
       "path": "languages/zh-Hans.ts",
-      "md5": "619cfee629213b1b51ba309f5f79a6ed",
-      "size": 138009
+      "md5": "0775a482a7bfd0a5fe37f31db583d6f0",
+      "size": 138006
     },
     "zh-Hant": {
       "path": "languages/zh-Hant.ts",
-      "md5": "f15ab86b55815b158dbb1a9d0cdd40e6",
-      "size": 138509
+      "md5": "f15837a99e02e8068262fb6581a0fff5",
+      "size": 138506
     }
   }
 }

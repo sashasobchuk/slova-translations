@@ -10,7 +10,10 @@ import {listLocaleFiles} from './locales.mjs'
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const files = {}
 for (const [locale, rel] of Object.entries(listLocaleFiles(root))) {
-  const buf = readFileSync(join(root, rel))
+  // md5 рахується без UTF-8 BOM: застосунок отримує текст через fetch().text(), який BOM відкидає,
+  // і пише на диск уже без нього — інакше md5 файлів з BOM ніколи не збігся б
+  let buf = readFileSync(join(root, rel))
+  if (buf[0] === 0xef && buf[1] === 0xbb && buf[2] === 0xbf) buf = buf.subarray(3)
   files[locale] = {path: rel, md5: createHash('md5').update(buf).digest('hex'), size: buf.length}
 }
 
