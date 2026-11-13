@@ -655,6 +655,7 @@ export const nl: TranslationSchema = {
       overlaySegmentTap: 'Tik op een woord: pauzeren, vertaalpaneel, naar deze regel springen. Lang tikken of dubbel tikken: een zin selecteren',
       sheetHandle: 'Sleep omhoog of omlaag om de hoogte te wijzigen. Sleep helemaal omlaag om te sluiten',
       sheetEngineTabs: 'Vertaalengine: wissel als de vertaling je niet bevalt',
+      sheetContextToggle: 'Vertaling met context: vaak beter, maar kan dingen verzinnen of een te specifieke betekenis geven. Gebruik met zorg',
       sheetLemaBadge: 'Andere vormen van dit woord. Tik om te kiezen welke je wilt opslaan',
       sheetEditTranslation: 'Vul je eigen vertaling in in plaats van de voorgestelde',
       tokProgress: 'Voortgang van het stapel. Tik op de balk om naar een ander woord te gaan',

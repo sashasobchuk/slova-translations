@@ -652,6 +652,7 @@ export const vi: TranslationSchema = {
       overlaySegmentTap: 'Chạm vào từ: tạm dừng, bảng dịch, tua về câu thoại này. Chạm giữ hoặc chạm đôi: chọn cụm từ',
       sheetHandle: 'Kéo lên hoặc xuống để thay đổi chiều cao bảng. Kéo hết xuống dưới để đóng',
       sheetEngineTabs: 'Công cụ dịch: chuyển nếu bản dịch chưa phù hợp',
+      sheetContextToggle: 'Dịch theo ngữ cảnh: thường tốt hơn, nhưng có thể bịa ra hoặc đưa nghĩa quá cụ thể. Hãy dùng cẩn thận',
       sheetLemaBadge: 'Các dạng khác của từ này. Chạm để chọn những dạng cần lưu',
       sheetEditTranslation: 'Nhập bản dịch của bạn thay cho bản gợi ý',
       tokProgress: 'Tiến trình bộ thẻ. Chạm vào thanh để chuyển sang từ khác',

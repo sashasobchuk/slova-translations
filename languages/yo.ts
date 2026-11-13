@@ -646,6 +646,7 @@ export const yo: TranslationSchema = {
       overlaySegmentTap: 'Tẹ̀ ọ̀rọ̀ kan: dá dúró, ìwé ìtumọ̀, padà sí ọ̀rọ̀ yìí. Tẹ̀ gùn tàbí tẹ̀ lẹ́ẹ̀mejì: yan gbólóhùn',
       sheetHandle: 'Fà sókè tàbí sísàlẹ̀ láti yí gíga ìwé náà padà. Fà á lọ sí ìsàlẹ̀ pátápátá láti pa á',
       sheetEngineTabs: 'Ẹ́ńjìnnì ìtumọ̀: yí padà tí ìtumọ̀ kò bá bá ọ mu',
+      sheetContextToggle: 'Ìtúmọ̀ pẹ̀lú àyíká ọ̀rọ̀: nígbà púpọ̀ ó dára jù, ṣùgbọ́n ó lè pa irọ́ tàbí fúnni ní ìtumọ̀ tó pàtó jù. Lò ó pẹ̀lú ìṣọ́ra',
       sheetLemaBadge: 'Àwọn ìrísí mìíràn ti ọ̀rọ̀ yìí. Tẹ̀ láti yan èyí tí ó yẹ kí a pamọ́',
       sheetEditTranslation: 'Tẹ ìtumọ̀ tìrẹ sílẹ̀ dípò èyí tí a dábàá',
       tokProgress: 'Ìlọsíwájú dékì. Tẹ̀ ìlà láti lọ sí ọ̀rọ̀ mìíràn',

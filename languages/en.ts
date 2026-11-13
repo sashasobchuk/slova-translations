@@ -662,6 +662,7 @@ export const en: TranslationSchema = {
       overlaySegmentTap: 'Tap a word: pause, translation sheet, jump to this line. Long press or double tap: select a phrase',
       sheetHandle: 'Drag up or down to change the sheet height. Drag all the way down to close it',
       sheetEngineTabs: 'Translation engine: switch if the translation does not suit you',
+      sheetContextToggle: 'Translate with context: often better, but may hallucinate or give an overly specific meaning. Use with care',
       sheetLemaBadge: 'Other forms of this word. Tap to choose which ones to save',
       sheetEditTranslation: 'Enter your own translation instead of the suggested one',
       tokProgress: 'Deck progress. Tap the bar to jump to another word',

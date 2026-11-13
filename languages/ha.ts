@@ -646,6 +646,7 @@ export const ha: TranslationSchema = {
       overlaySegmentTap: 'Danna kalma: tsayawa, takardar fassara, komawa zuwa wannan jumla. Dogon danna ko danna biyu: zaɓi jumla',
       sheetHandle: 'Ja sama ko ƙasa don canza tsawon takardar. Ja har ƙasa don rufe ta',
       sheetEngineTabs: 'Injin fassara: canza idan fassarar bata yi maka daɗi ba',
+      sheetContextToggle: 'Fassara da mahallin magana: sau da yawa ta fi kyau, amma tana iya ƙirƙira ko ba da ma\'ana mai tsauri fiye da kima. Yi amfani da hankali',
       sheetLemaBadge: 'Sauran sifofin wannan kalma. Danna don zaɓar waɗanda za a adana',
       sheetEditTranslation: 'Rubuta fassararka maimakon wadda aka ba da shawara',
       tokProgress: 'Ci gaban katin. Danna sandar don zuwa wata kalma',

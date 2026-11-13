@@ -651,6 +651,7 @@ export const ja: TranslationSchema = {
       overlaySegmentTap: '単語をタップ：一時停止、翻訳シート、この台詞へ移動。長押しまたはダブルタップ：フレーズを選択',
       sheetHandle: '上下にドラッグしてシートの高さを変更。最後まで下にドラッグすると閉じます',
       sheetEngineTabs: '翻訳エンジン：訳が合わないときは切り替えてください',
+      sheetContextToggle: '文脈ありの翻訳：精度が上がることが多いですが、事実にない内容を作ったり、意味が限定的になりすぎたりすることがあります。注意して使ってください',
       sheetLemaBadge: 'この単語の他の形。タップして保存する形を選択',
       sheetEditTranslation: '提案された訳の代わりに自分の訳を入力',
       tokProgress: 'デッキの進捗。バーをタップして別の単語へ移動',

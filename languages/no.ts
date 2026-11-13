@@ -646,6 +646,7 @@ export const no: TranslationSchema = {
       overlaySegmentTap: 'Trykk på et ord: pause, oversettelsesark, hopp til denne replikken. Langt trykk eller dobbelttrykk: velg en frase',
       sheetHandle: 'Dra opp eller ned for å endre høyden på arket. Dra helt ned for å lukke det',
       sheetEngineTabs: 'Oversettelsesmotor: bytt hvis oversettelsen ikke passer',
+      sheetContextToggle: 'Oversettelse med kontekst: ofte bedre, men kan finne på ting eller gi en for spesifikk betydning. Bruk med forsiktighet',
       sheetLemaBadge: 'Andre former av dette ordet. Trykk for å velge hvilke som skal lagres',
       sheetEditTranslation: 'Skriv inn din egen oversettelse i stedet for forslaget',
       tokProgress: 'Fremdrift for stokken. Trykk på stripen for å hoppe til et annet ord',

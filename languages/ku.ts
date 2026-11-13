@@ -646,6 +646,7 @@ export const ku: TranslationSchema = {
       overlaySegmentTap: 'Peyvê lêxe: rawestîne, pelê wergerê, here vê gotinê. Dirêj lêxe an du caran lêxe: biwêjeyê hilbijêre',
       sheetHandle: 'Ji bo guhertina bilindahiya pelê, jor an jêr bikişîne. Ji bo girtinê heta binê wê bikişîne',
       sheetEngineTabs: 'Motora wergerê: eger werger ne li dilê te be, biguhezîne',
+      sheetContextToggle: 'Wergera bi çarçoveyê: pir caran çêtir e, lê dibe ku tiştan çêke an wateyeke pir taybet bide. Bi hişyarî bikar bîne',
       sheetLemaBadge: 'Şiklên din ên vê peyvê. Ji bo hilbijartina yên ku bêne tomarkirin lêxe',
       sheetEditTranslation: 'Li şûna wergera pêşniyarkirî, wergera xwe binivîse',
       tokProgress: 'Pêşveçûna desteyê. Ji bo çûna peyveke din, serê barê bikeve',

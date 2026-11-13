@@ -651,6 +651,7 @@ export const sw: TranslationSchema = {
       overlaySegmentTap: 'Gusa neno: simamisha, karatasi ya tafsiri, rukia mstari huu. Gusa kwa muda mrefu au mara mbili: chagua kifungu',
       sheetHandle: 'Buruta juu au chini kubadilisha urefu wa karatasi. Buruta hadi chini kabisa kufunga',
       sheetEngineTabs: 'Injini ya tafsiri: badilisha ikiwa tafsiri haikufai',
+      sheetContextToggle: 'Tafsiri kwa muktadha: mara nyingi ni bora, lakini inaweza kubuni au kutoa maana mahususi kupita kiasi. Itumie kwa tahadhari',
       sheetLemaBadge: 'Maumbo mengine ya neno hili. Gusa ili kuchagua yapi kuhifadhi',
       sheetEditTranslation: 'Andika tafsiri yako badala ya iliyopendekezwa',
       tokProgress: 'Maendeleo ya sitaha. Gusa upau ili kwenda kwa neno jingine',

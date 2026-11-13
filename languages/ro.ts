@@ -646,6 +646,7 @@ export const ro: TranslationSchema = {
       overlaySegmentTap: 'Atingeți un cuvânt: pauză, panoul de traducere, derulare la această replică. Atingere lungă sau dublă: selectați o frază',
       sheetHandle: 'Trageți în sus sau în jos pentru a schimba înălțimea panoului. Trageți până jos pentru a-l închide',
       sheetEngineTabs: 'Motorul de traducere: schimbați-l dacă traducerea nu vă convine',
+      sheetContextToggle: 'Traducere cu context: adesea mai bună, dar poate inventa sau oferi un sens prea specific. Folosiți cu grijă',
       sheetLemaBadge: 'Alte forme ale acestui cuvânt. Atingeți pentru a alege care să fie salvate',
       sheetEditTranslation: 'Introduceți propria traducere în locul celei sugerate',
       tokProgress: 'Progresul parcursului. Atingeți bara pentru a trece la alt cuvânt',

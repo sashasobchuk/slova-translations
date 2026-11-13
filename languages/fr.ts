@@ -652,6 +652,7 @@ export const fr: TranslationSchema = {
       overlaySegmentTap: 'Appuyez sur un mot : pause, volet de traduction, retour à cette réplique. Appui long ou double appui : sélectionner une phrase',
       sheetHandle: 'Faites glisser vers le haut ou le bas pour changer la hauteur du volet. Faites-le glisser jusqu\'en bas pour le fermer',
       sheetEngineTabs: 'Moteur de traduction : changez-le si la traduction ne vous convient pas',
+      sheetContextToggle: 'Traduction avec contexte : souvent meilleure, mais elle peut halluciner ou donner un sens trop spécifique. À utiliser avec prudence',
       sheetLemaBadge: 'Autres formes de ce mot. Appuyez pour choisir lesquelles enregistrer',
       sheetEditTranslation: 'Saisissez votre propre traduction à la place de celle proposée',
       tokProgress: 'Progression du paquet. Appuyez sur la barre pour passer à un autre mot',

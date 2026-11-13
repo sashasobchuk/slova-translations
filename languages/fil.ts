@@ -655,6 +655,7 @@ export const fil: TranslationSchema = {
       overlaySegmentTap: 'I-tap ang salita: stop, translation sheet, balik sa linyang ito. Long tap o double tap: piliin ang parirala',
       sheetHandle: 'I-drag pataas o pababa para baguhin ang taas ng sheet. I-drag hanggang sa ibaba para isara',
       sheetEngineTabs: 'Translation engine: magpalit kung hindi ka nasiyahan sa salin',
+      sheetContextToggle: 'Pagsasalin na may konteksto: madalas mas mainam, pero maaaring mag-imbento o magbigay ng masyadong tiyak na kahulugan. Mag-ingat sa paggamit',
       sheetLemaBadge: 'Iba pang anyo ng salitang ito. I-tap para piliin kung alin ang sasave',
       sheetEditTranslation: 'I-type ang sarili mong salin sa halip na iminungkahi',
       tokProgress: 'Progreso ng deck. I-tap ang bar para pumunta sa ibang salita',

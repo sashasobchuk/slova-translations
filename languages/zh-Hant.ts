@@ -654,6 +654,7 @@ export const zhHant: TranslationSchema = {
       overlaySegmentTap: '點按單字：暫停、翻譯抽屜、跳到此台詞。長按或雙擊：選取片語',
       sheetHandle: '上下拖曳以調整抽屜高度，向下拖到底即可關閉',
       sheetEngineTabs: '翻譯引擎：如果譯文不滿意，可切換',
+      sheetContextToggle: '結合上下文翻譯：通常更準確，但可能憑空編造，或給出過於具體的含義。請謹慎使用',
       sheetLemaBadge: '此詞的其他形式。點按選擇要儲存哪些',
       sheetEditTranslation: '輸入你自己的譯文，代替建議的譯文',
       tokProgress: '牌組進度。點按進度條可跳到其他單字',

@@ -655,6 +655,7 @@ export const tr: TranslationSchema = {
       overlaySegmentTap: 'Kelimeye dokun: duraklat, çeviri paneli, bu repliğe git. Uzun dokunma veya çift dokunma: cümleyi seç',
       sheetHandle: 'Panel yüksekliğini değiştirmek için yukarı veya aşağı sürükleyin. Kapatmak için en alta sürükleyin',
       sheetEngineTabs: 'Çeviri motoru: çeviri uymuyorsa değiştirin',
+      sheetContextToggle: 'Bağlamlı çeviri: çoğu zaman daha iyidir ama uydurabilir veya fazla spesifik bir anlam verebilir. Dikkatli kullanın',
       sheetLemaBadge: 'Bu kelimenin diğer biçimleri. Hangilerinin kaydedileceğini seçmek için dokunun',
       sheetEditTranslation: 'Önerilen çeviri yerine kendi çevirinizi yazın',
       tokProgress: 'Deste ilerlemesi. Başka bir kelimeye geçmek için çubuğa dokunun',

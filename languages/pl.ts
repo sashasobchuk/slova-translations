@@ -655,6 +655,7 @@ export const pl: TranslationSchema = {
       overlaySegmentTap: 'Stuknij słowo: zatrzymanie, arkusz tłumaczenia, przewinięcie do tej kwestii. Długie przytrzymanie lub dwukrotne stuknięcie: zaznacz frazę',
       sheetHandle: 'Przeciągnij w górę lub w dół, aby zmienić wysokość arkusza. Przeciągnij na sam dół, aby zamknąć',
       sheetEngineTabs: 'Silnik tłumaczenia: przełącz, jeśli tłumaczenie Ci nie odpowiada',
+      sheetContextToggle: 'Tłumaczenie z kontekstem: często lepsze, ale może zmyślać lub podawać zbyt szczegółowe znaczenie. Używaj ostrożnie',
       sheetLemaBadge: 'Inne formy tego słowa. Stuknij, aby wybrać, które zapisać',
       sheetEditTranslation: 'Wpisz własne tłumaczenie zamiast zaproponowanego',
       tokProgress: 'Postęp talii. Stuknij pasek, aby przejść do innego słowa',

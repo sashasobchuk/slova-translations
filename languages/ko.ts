@@ -646,6 +646,7 @@ export const ko: TranslationSchema = {
       overlaySegmentTap: '단어 탭: 정지, 번역 시트, 이 대사로 이동. 길게 누르거나 두 번 탭: 구절 선택',
       sheetHandle: '위아래로 드래그하여 시트 높이 변경. 끝까지 아래로 드래그하면 닫힘',
       sheetEngineTabs: '번역 엔진: 번역이 마음에 들지 않으면 전환하세요',
+      sheetContextToggle: '문맥 번역: 대체로 더 낫지만, 없는 내용을 지어내거나 의미를 지나치게 좁게 줄 수 있습니다. 주의해서 사용하세요',
       sheetLemaBadge: '이 단어의 다른 형태. 탭하여 저장할 형태 선택',
       sheetEditTranslation: '제안된 번역 대신 직접 번역을 입력',
       tokProgress: '덱 진행률. 막대를 탭하면 다른 단어로 이동',

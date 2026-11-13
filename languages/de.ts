@@ -649,6 +649,7 @@ export const de: TranslationSchema = {
       overlaySegmentTap: 'Tippen auf ein Wort: Stopp, Übersetzungsleiste, Sprung zu dieser Zeile. Lang tippen oder doppelt tippen: Satz markieren',
       sheetHandle: 'Ziehen Sie nach oben oder unten, um die Höhe anzupassen. Ganz nach unten ziehen, um zu schließen',
       sheetEngineTabs: 'Übersetzungs-Engine: wechseln, wenn die Übersetzung nicht passt',
+      sheetContextToggle: 'Übersetzung mit Kontext: oft besser, kann aber halluzinieren oder eine zu spezielle Bedeutung liefern. Mit Vorsicht verwenden',
       sheetLemaBadge: 'Weitere Formen dieses Wortes. Tippen, um auszuwählen, welche gespeichert werden',
       sheetEditTranslation: 'Eigene Übersetzung statt des Vorschlags eingeben',
       tokProgress: 'Fortschritt des Stapels. Auf die Leiste tippen, um zu einem anderen Wort zu springen',

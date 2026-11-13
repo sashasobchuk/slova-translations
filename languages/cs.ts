@@ -645,6 +645,7 @@ export const cs: TranslationSchema = {
       overlaySegmentTap: 'Klepnutí na slovo: zastavit, panel překladu, přetočit na tuto repliku. Dlouhé klepnutí nebo dvojklik: označit frázi',
       sheetHandle: 'Přetažením nahoru nebo dolů změníte výšku panelu. Přetažením až dolů panel zavřete',
       sheetEngineTabs: 'Překladový engine: přepněte, pokud se vám překlad nelíbí',
+      sheetContextToggle: 'Překlad s kontextem: často lepší, ale může si vymýšlet nebo dávat příliš specifický význam. Používejte opatrně',
       sheetLemaBadge: 'Další tvary tohoto slova. Klepnutím vyberte, které uložit',
       sheetEditTranslation: 'Zadejte vlastní překlad místo navrhovaného',
       tokProgress: 'Postup balíčku. Klepnutím na pruh přejdete na jiné slovo',

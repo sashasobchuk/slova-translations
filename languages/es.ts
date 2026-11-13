@@ -651,6 +651,7 @@ export const es: TranslationSchema = {
       overlaySegmentTap: 'Toca una palabra: pausa, panel de traducción, saltar a esta línea. Mantén pulsado o toca dos veces: seleccionar una frase',
       sheetHandle: 'Arrastra hacia arriba o abajo para cambiar la altura del panel. Arrástralo hasta abajo para cerrarlo',
       sheetEngineTabs: 'Motor de traducción: cámbialo si la traducción no te convence',
+      sheetContextToggle: 'Traducción con contexto: suele ser mejor, pero puede inventar o dar un significado demasiado específico. Úsala con cuidado',
       sheetLemaBadge: 'Otras formas de esta palabra. Toca para elegir cuáles guardar',
       sheetEditTranslation: 'Escribe tu propia traducción en lugar de la sugerida',
       tokProgress: 'Progreso del mazo. Toca la barra para ir a otra palabra',

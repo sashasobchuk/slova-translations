@@ -646,6 +646,7 @@ export const jv: TranslationSchema = {
       overlaySegmentTap: 'Tutul tembung: mandheg, lembar terjemahan, mlumpat menyang ukara iki. Tutul dawa utawa kaping pindho: pilih frasa',
       sheetHandle: 'Seret munggah utawa mudhun kanggo ngganti dhuwure lembar. Seret nganti ngisor kanggo nutup',
       sheetEngineTabs: 'Mesin terjemahan: ganti yen terjemahan ora pas',
+      sheetContextToggle: 'Terjemahan nganggo konteks: asring luwih apik, nanging bisa ngarang utawa menehi teges sing kakehan spesifik. Gunakna kanthi ati-ati',
       sheetLemaBadge: 'Wujud liya saka tembung iki. Tutul kanggo milih sing arep disimpen',
       sheetEditTranslation: 'Ketik terjemahanmu dhewe tinimbang sing disaranake',
       tokProgress: 'Kemajuan dek. Tutul bilah kanggo mlumpat menyang tembung liya',

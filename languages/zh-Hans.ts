@@ -652,6 +652,7 @@ export const zhHans: TranslationSchema = {
       overlaySegmentTap: '点按单词：暂停、翻译抽屉、跳转到此台词。长按或双击：选中短语',
       sheetHandle: '上下拖动以调整抽屉高度，向下拖到底即可关闭',
       sheetEngineTabs: '翻译引擎：如果译文不满意，可切换',
+      sheetContextToggle: '结合上下文翻译：通常更准确，但可能凭空编造，或给出过于具体的含义。请谨慎使用',
       sheetLemaBadge: '此词的其他形式。点按选择要保存哪些',
       sheetEditTranslation: '输入你自己的译文，代替建议的译文',
       tokProgress: '牌组进度。点按进度条可跳到其他单词',
