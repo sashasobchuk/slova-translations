@@ -556,7 +556,10 @@ export const ar: TranslationSchema = {
     noSubtitlesFound: 'لم يتم العثور على ترجمات لهذه اللغة',
     noSubtitlesForVideo: (originalLang, translationLang) => `لم يتم العثور على ترجمات لهذا الفيديو (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `لم يتم العثور على النص الأساسي للترجمة إلى "${translationLang}"`,
-    loadSubtitlesFailed: 'تعذّر تحميل الترجمات'
+    loadSubtitlesFailed: 'تعذّر تحميل الترجمات',
+    offlineTranslateA11y: 'ترجمة الترجمات المصاحبة',
+    offlineTranslateClear: 'سيتم حذف جميع ترجمات الترجمات المصاحبة لهذا الفيديو من قاعدة البيانات لجميع المحركات. لا يمكن التراجع عن هذا الإجراء.',
+    offlineTranslateNote: 'سيتم تشغيل المترجم دون اتصال مؤقتًا إلى أن تتوفر الترجمة التلقائية.'
   },
   swipeUndo: {
     noLanguageSelected: 'لم يتم اختيار لغة',
@@ -1310,7 +1313,9 @@ export const ar: TranslationSchema = {
       noModelVersion: (hop) => `لم يتم تحميل أي إصدار من نموذج ${hop}`
     },
     tabPc: 'مترجم API مخصّص',
-    descriptionPc: 'ترجمة على جهاز الكمبيوتر الخاص بك (Opus-MT أو MADLAD-400) عبر دعم UI دون اتصال. يجب أن يكون الهاتف والكمبيوتر على الواي فاي نفسه.'
+    descriptionPc: 'ترجمة على جهاز الكمبيوتر الخاص بك (Opus-MT أو MADLAD-400) عبر دعم UI دون اتصال. يجب أن يكون الهاتف والكمبيوتر على الواي فاي نفسه.',
+    withContextLabel: 'الترجمة مع السياق',
+    withContextHint: 'تُترجم الكلمة مع جملتها، والجملة مع الجمل المجاورة. الترجمة أدق لكنها أبطأ.'
   },
   timeOffsetPopup: {
     title: '⏱ الإزاحة، ثانية',
@@ -1595,6 +1600,8 @@ export const ar: TranslationSchema = {
       sentenceFailed: 'تعذّرت ترجمة الجملة',
       skipped: (failed, error) => `جمل تم تخطيها: ${failed}. ${error}`,
       bookFailed: 'تعذّرت ترجمة الكتاب',
+      engineSwitched: (failed, from, to, next) => `محرك ${failed} لا يترجم ${from}→${to}. تم التبديل إلى ${next}.`,
+      subtitlesFailed: 'تعذّرت ترجمة الترجمات المصاحبة'
     },
     tokens: {
       parseFailed: 'تعذّر تحليل نص الكتاب',

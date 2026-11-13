@@ -558,7 +558,10 @@ export const nl: TranslationSchema = {
     noSubtitlesFound: 'Geen ondertiteling gevonden voor deze taal',
     noSubtitlesForVideo: (originalLang, translationLang) => `Geen ondertiteling gevonden voor deze video (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Basis-transcript voor vertaling naar "${translationLang}" niet gevonden`,
-    loadSubtitlesFailed: 'Ondertitels laden mislukt'
+    loadSubtitlesFailed: 'Ondertitels laden mislukt',
+    offlineTranslateA11y: 'Ondertitelvertaling',
+    offlineTranslateClear: 'Alle ondertitelvertalingen van deze video worden voor alle engines uit de database verwijderd. Dit kan niet ongedaan worden gemaakt.',
+    offlineTranslateNote: 'De offline vertaler wordt tijdelijk ingeschakeld totdat er een automatische vertaling is.'
   },
   swipeUndo: {
     noLanguageSelected: 'Geen taal geselecteerd',
@@ -1312,7 +1315,9 @@ export const nl: TranslationSchema = {
       noModelVersion: (hop) => `Geen enkele versie van het model ${hop} kon worden geladen`
     },
     tabPc: 'Custom Vertaler API',
-    descriptionPc: 'Vertalen op jouw PC (Opus-MT of MADLAD-400) via offline support UI. Telefoon en PC op dezelfde Wi-Fi.'
+    descriptionPc: 'Vertalen op jouw PC (Opus-MT of MADLAD-400) via offline support UI. Telefoon en PC op dezelfde Wi-Fi.',
+    withContextLabel: 'Vertalen met context',
+    withContextHint: 'Een woord wordt samen met de zin vertaald, een zin samen met de naburige zinnen. De vertaling is nauwkeuriger, maar trager.'
   },
   timeOffsetPopup: {
     title: '⏱ Verschuiving, s',
@@ -1597,6 +1602,8 @@ export const nl: TranslationSchema = {
       sentenceFailed: 'Vertalen van zin mislukt',
       skipped: (failed, error) => `Overgeslagen zinnen: ${failed}. ${error}`,
       bookFailed: 'Vertalen van boek mislukt',
+      engineSwitched: (failed, from, to, next) => `De engine ${failed} vertaalt ${from}→${to} niet. Overgeschakeld naar ${next}.`,
+      subtitlesFailed: 'Kan de ondertitels niet vertalen'
     },
     tokens: {
       parseFailed: 'Analyseren van boektekst mislukt',

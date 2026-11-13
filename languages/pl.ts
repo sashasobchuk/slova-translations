@@ -558,7 +558,10 @@ export const pl: TranslationSchema = {
     noSubtitlesFound: 'Nie znaleziono napisów dla tego języka',
     noSubtitlesForVideo: (originalLang, translationLang) => `Nie znaleziono napisów dla tego filmu (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Nie znaleziono podstawowej transkrypcji do tłumaczenia na "${translationLang}"`,
-    loadSubtitlesFailed: 'Nie udało się wczytać napisów'
+    loadSubtitlesFailed: 'Nie udało się wczytać napisów',
+    offlineTranslateA11y: 'Tłumaczenie napisów',
+    offlineTranslateClear: 'Wszystkie tłumaczenia napisów tego filmu zostaną usunięte z bazy danych dla wszystkich silników. Tej operacji nie można cofnąć.',
+    offlineTranslateNote: 'Tymczasowo włączam tłumacza offline, dopóki nie będzie automatycznego tłumaczenia.'
   },
   swipeUndo: {
     noLanguageSelected: 'Nie wybrano języka',
@@ -1311,7 +1314,9 @@ export const pl: TranslationSchema = {
       noModelVersion: (hop) => `Nie załadowano żadnej wersji modelu ${hop}`
     },
     tabPc: 'Własne API tłumacza',
-    descriptionPc: 'Tłumaczenie na Twoim PC za pomocą UI offline support (Opus-MT lub MADLAD-400). Telefon i PC muszą być w tej samej sieci Wi-Fi.'
+    descriptionPc: 'Tłumaczenie na Twoim PC za pomocą UI offline support (Opus-MT lub MADLAD-400). Telefon i PC muszą być w tej samej sieci Wi-Fi.',
+    withContextLabel: 'Tłumacz z kontekstem',
+    withContextHint: 'Słowo jest tłumaczone razem ze zdaniem, a zdanie razem z sąsiednimi. Tłumaczenie jest dokładniejsze, ale wolniejsze.'
   },
   timeOffsetPopup: {
     title: '⏱ Przesunięcie, s',
@@ -1596,6 +1601,8 @@ export const pl: TranslationSchema = {
       sentenceFailed: 'Nie udało się przetłumaczyć zdania',
       skipped: (failed, error) => `Pominięto zdań: ${failed}. ${error}`,
       bookFailed: 'Nie udało się przetłumaczyć książki',
+      engineSwitched: (failed, from, to, next) => `Silnik ${failed} nie tłumaczy ${from}→${to}. Przełączono na ${next}.`,
+      subtitlesFailed: 'Nie udało się przetłumaczyć napisów'
     },
     tokens: {
       parseFailed: 'Nie udało się przeanalizować tekstu książki',

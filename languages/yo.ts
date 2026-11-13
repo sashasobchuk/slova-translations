@@ -549,7 +549,10 @@ export const yo: TranslationSchema = {
     noSubtitlesFound: 'Ko si awọn atunkọ fun ede yii',
     noSubtitlesForVideo: (originalLang, translationLang) => `Ko si awọn atunkọ fun fidio yii (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Ko si akọsilẹ ipilẹ fun itumọ si "${translationLang}"`,
-    loadSubtitlesFailed: 'Kò ṣeé ṣe láti gbé àwọn àkọlé wọlé'
+    loadSubtitlesFailed: 'Kò ṣeé ṣe láti gbé àwọn àkọlé wọlé',
+    offlineTranslateA11y: 'Ìtúmọ̀ àkọlé ìsàlẹ̀',
+    offlineTranslateClear: 'Gbogbo ìtúmọ̀ àkọlé ìsàlẹ̀ fídíò yìí ni a ó pa rẹ́ kúrò nínú ibi ìpamọ́ dátà, fún gbogbo ẹ̀rọ. A kò lè yí èyí padà.',
+    offlineTranslateNote: 'Mo ń tan atúmọ̀ àìsí-íntánẹ́ẹ̀tì fún ìgbà díẹ̀ títí ìtúmọ̀ aládàáṣe yóò fi wà.'
   },
   swipeUndo: {
     noLanguageSelected: 'Kò sí èdè tí a yàn',
@@ -1303,7 +1306,9 @@ export const yo: TranslationSchema = {
       noModelVersion: (hop) => `Kò sí ẹ̀yà àpẹẹrẹ ${hop} kankan tó gbé jáde`
     },
     tabPc: 'Olùtumọ̀ API tí a ṣe àtúnṣe (Custom)',
-    descriptionPc: 'Túmọ̀ lórí PC rẹ (Opus-MT tàbí MADLAD-400) nípasẹ̀ àtìlẹyìn offline UI. Fóònù àti PC gbọdọ̀ wà lórí nẹ́twọ̀kì Wi-Fi kan náà.'
+    descriptionPc: 'Túmọ̀ lórí PC rẹ (Opus-MT tàbí MADLAD-400) nípasẹ̀ àtìlẹyìn offline UI. Fóònù àti PC gbọdọ̀ wà lórí nẹ́twọ̀kì Wi-Fi kan náà.',
+    withContextLabel: 'Túmọ̀ pẹ̀lú àyíká ọ̀rọ̀',
+    withContextHint: 'A ń túmọ̀ ọ̀rọ̀ pẹ̀lú gbólóhùn rẹ̀, àti gbólóhùn pẹ̀lú àwọn tí ó wà nítòsí. Ìtúmọ̀ náà péye jù, ṣùgbọ́n ó lọ́ra jù.'
   },
   timeOffsetPopup: {
     title: '⏱ Àtúnṣe, s',
@@ -1588,6 +1593,8 @@ export const yo: TranslationSchema = {
       sentenceFailed: 'Kò lè túmọ̀ gbolohun',
       skipped: (failed, error) => `Iye gbolohun tí a fò kọjá: ${failed}. ${error}`,
       bookFailed: 'Kò lè túmọ̀ ìwé',
+      engineSwitched: (failed, from, to, next) => `Ẹ̀rọ ${failed} kò lè túmọ̀ ${from}→${to}. A ti yí padà sí ${next}.`,
+      subtitlesFailed: 'A kò lè túmọ̀ àwọn àkọlé ìsàlẹ̀'
     },
     tokens: {
       parseFailed: 'Kò lè túmọ̀ ọ̀rọ̀ ìwé',

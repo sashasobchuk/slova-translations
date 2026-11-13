@@ -555,7 +555,10 @@ export const zhHans: TranslationSchema = {
     noSubtitlesFound: '未找到该语言的字幕',
     noSubtitlesForVideo: (originalLang, translationLang) => `未找到此视频的字幕 (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `未找到翻译成"${translationLang}"的基础文本`,
-    loadSubtitlesFailed: '字幕加载失败'
+    loadSubtitlesFailed: '字幕加载失败',
+    offlineTranslateA11y: '字幕翻译',
+    offlineTranslateClear: '此视频的所有字幕翻译（所有引擎）都将从数据库中删除。此操作无法撤销。',
+    offlineTranslateNote: '在自动翻译可用之前，暂时启用离线翻译器。'
   },
   swipeUndo: {
     noLanguageSelected: '未选择语言',
@@ -1307,7 +1310,9 @@ export const zhHans: TranslationSchema = {
       noModelVersion: (hop) => `模型 ${hop} 的任何版本都未能加载`
     },
     tabPc: '自定义 API 翻译器',
-    descriptionPc: '在您的电脑上翻译（Opus-MT 或 MADLAD-400），通过 UI offline support。手机和电脑需连接同一 Wi-Fi。'
+    descriptionPc: '在您的电脑上翻译（Opus-MT 或 MADLAD-400），通过 UI offline support。手机和电脑需连接同一 Wi-Fi。',
+    withContextLabel: '结合上下文翻译',
+    withContextHint: '单词会连同所在句子一起翻译，句子会连同前后句子一起翻译。翻译更准确，但更慢。'
   },
   timeOffsetPopup: {
     title: '⏱ 偏移量，秒',
@@ -1592,6 +1597,8 @@ export const zhHans: TranslationSchema = {
       sentenceFailed: '无法翻译句子',
       skipped: (failed, error) => `已跳过句子：${failed}。${error}`,
       bookFailed: '无法翻译书籍',
+      engineSwitched: (failed, from, to, next) => `${failed} 引擎无法翻译 ${from}→${to}。已切换到 ${next}。`,
+      subtitlesFailed: '无法翻译字幕'
     },
     tokens: {
       parseFailed: '无法解析书籍文本',

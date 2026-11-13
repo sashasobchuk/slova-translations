@@ -555,7 +555,10 @@ export const pt: TranslationSchema = {
     noSubtitlesFound: 'Nenhum subtítulo encontrado para este idioma',
     noSubtitlesForVideo: (originalLang, translationLang) => `Nenhum subtítulo encontrado para este vídeo (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Transcrição base para tradução para "${translationLang}" não encontrada`,
-    loadSubtitlesFailed: 'Não foi possível carregar as legendas'
+    loadSubtitlesFailed: 'Não foi possível carregar as legendas',
+    offlineTranslateA11y: 'Tradução de legendas',
+    offlineTranslateClear: 'Todas as traduções de legendas deste vídeo serão excluídas do banco de dados, para todos os motores. Esta ação não pode ser desfeita.',
+    offlineTranslateNote: 'Ativando temporariamente o tradutor offline até que haja tradução automática.'
   },
   swipeUndo: {
     noLanguageSelected: 'Nenhum idioma selecionado',
@@ -1308,7 +1311,9 @@ export const pt: TranslationSchema = {
       noModelVersion: (hop) => `Nenhuma versão do modelo ${hop} foi carregada`
     },
     tabPc: 'Tradutor API personalizado',
-    descriptionPc: 'Tradução no seu PC (Opus-MT ou MADLAD-400) via suporte offline UI. O telemóvel e o PC devem estar na mesma rede Wi-Fi.'
+    descriptionPc: 'Tradução no seu PC (Opus-MT ou MADLAD-400) via suporte offline UI. O telemóvel e o PC devem estar na mesma rede Wi-Fi.',
+    withContextLabel: 'Traduzir com contexto',
+    withContextHint: 'A palavra é traduzida junto com a frase, e a frase junto com as vizinhas. A tradução é mais precisa, mas mais lenta.'
   },
   timeOffsetPopup: {
     title: '⏱ Deslocamento, s',
@@ -1593,6 +1598,8 @@ export const pt: TranslationSchema = {
       sentenceFailed: 'Não foi possível traduzir a frase',
       skipped: (failed, error) => `Frases ignoradas: ${failed}. ${error}`,
       bookFailed: 'Não foi possível traduzir o livro',
+      engineSwitched: (failed, from, to, next) => `O motor ${failed} não traduz ${from}→${to}. Alterado para ${next}.`,
+      subtitlesFailed: 'Não foi possível traduzir as legendas'
     },
     tokens: {
       parseFailed: 'Não foi possível analisar o texto do livro',

@@ -549,7 +549,10 @@ export const ko: TranslationSchema = {
     noSubtitlesFound: '이 언어에 대한 자막을 찾을 수 없습니다',
     noSubtitlesForVideo: (originalLang, translationLang) => `이 동영상의 자막을 찾을 수 없습니다 (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}"으로 번역하기 위한 기본 트랜스크립트를 찾을 수 없습니다`,
-    loadSubtitlesFailed: '자막을 불러오지 못했습니다'
+    loadSubtitlesFailed: '자막을 불러오지 못했습니다',
+    offlineTranslateA11y: '자막 번역',
+    offlineTranslateClear: '이 동영상의 모든 자막 번역이 모든 엔진에 대해 데이터베이스에서 삭제됩니다. 이 작업은 취소할 수 없습니다.',
+    offlineTranslateNote: '자동 번역을 사용할 수 있을 때까지 일시적으로 오프라인 번역기를 켭니다.'
   },
   swipeUndo: {
     noLanguageSelected: '선택된 언어가 없습니다',
@@ -1298,7 +1301,9 @@ export const ko: TranslationSchema = {
       noModelVersion: (hop) => `${hop} 모델의 어떤 버전도 불러오지 못했습니다`
     },
     tabPc: '커스텀 API 번역기',
-    descriptionPc: 'UI offline support를 통한 PC에서의 번역 (Opus-MT 또는 MADLAD-400). 휴대폰과 PC는 동일한 Wi-Fi에 있어야 합니다.'
+    descriptionPc: 'UI offline support를 통한 PC에서의 번역 (Opus-MT 또는 MADLAD-400). 휴대폰과 PC는 동일한 Wi-Fi에 있어야 합니다.',
+    withContextLabel: '문맥과 함께 번역',
+    withContextHint: '단어는 문장과 함께, 문장은 앞뒤 문장과 함께 번역됩니다. 더 정확하지만 더 느립니다.'
   },
   timeOffsetPopup: {
     title: '⏱ 오프셋, 초',
@@ -1583,6 +1588,8 @@ export const ko: TranslationSchema = {
       sentenceFailed: '문장을 번역하지 못했습니다',
       skipped: (failed, error) => `건너뛴 문장: ${failed}개. ${error}`,
       bookFailed: '도서를 번역하지 못했습니다',
+      engineSwitched: (failed, from, to, next) => `${failed} 엔진은 ${from}→${to}를 번역할 수 없습니다. ${next}(으)로 전환했습니다.`,
+      subtitlesFailed: '자막을 번역하지 못했습니다'
     },
     tokens: {
       parseFailed: '도서 텍스트를 분석하지 못했습니다',

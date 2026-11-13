@@ -558,7 +558,10 @@ export const fa: TranslationSchema = {
     noSubtitlesFound: 'زیرنویسی برای این زبان یافت نشد',
     noSubtitlesForVideo: (originalLang, translationLang) => `زیرنویسی برای این ویدیو یافت نشد (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `متن پایه برای ترجمه به "${translationLang}" یافت نشد`,
-    loadSubtitlesFailed: 'بارگذاری زیرنویس ناموفق بود'
+    loadSubtitlesFailed: 'بارگذاری زیرنویس ناموفق بود',
+    offlineTranslateA11y: 'ترجمه زیرنویس',
+    offlineTranslateClear: 'همه ترجمه‌های زیرنویس این ویدیو برای همه موتورها از پایگاه داده حذف می‌شوند. این کار قابل بازگشت نیست.',
+    offlineTranslateNote: 'تا زمانی که ترجمه خودکار در دسترس نیست، موقتاً مترجم آفلاین را روشن می‌کنم.'
   },
   swipeUndo: {
     noLanguageSelected: 'هیچ زبانی انتخاب نشده است',
@@ -1312,7 +1315,9 @@ export const fa: TranslationSchema = {
       noModelVersion: (hop) => `هیچ نسخه‌ای از مدل ${hop} بارگذاری نشد`
     },
     tabPc: 'مترجم API سفارشی',
-    descriptionPc: 'ترجمه روی رایانهٔ شما (Opus-MT یا MADLAD-400) از طریق پشتیبانی آفلاین UI. تلفن و رایانه باید در یک Wi-Fi باشند.'
+    descriptionPc: 'ترجمه روی رایانهٔ شما (Opus-MT یا MADLAD-400) از طریق پشتیبانی آفلاین UI. تلفن و رایانه باید در یک Wi-Fi باشند.',
+    withContextLabel: 'ترجمه با بافت',
+    withContextHint: 'واژه همراه با جمله‌اش و جمله همراه با جمله‌های مجاور ترجمه می‌شود. ترجمه دقیق‌تر اما کندتر است.'
   },
   timeOffsetPopup: {
     title: '⏱ جابجایی، ثانیه',
@@ -1597,6 +1602,8 @@ export const fa: TranslationSchema = {
       sentenceFailed: 'ترجمهٔ جمله ناموفق بود',
       skipped: (failed, error) => `جمله‌های رد شده: ${failed}. ${error}`,
       bookFailed: 'ترجمهٔ کتاب ناموفق بود',
+      engineSwitched: (failed, from, to, next) => `موتور ${failed} نمی‌تواند ${from}→${to} را ترجمه کند. به ${next} تغییر کرد.`,
+      subtitlesFailed: 'ترجمه زیرنویس‌ها ممکن نشد'
     },
     tokens: {
       parseFailed: 'تجزیهٔ متن کتاب ناموفق بود',

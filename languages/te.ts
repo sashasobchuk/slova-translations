@@ -555,7 +555,10 @@ export const te: TranslationSchema = {
     noSubtitlesFound: 'ఈ భాష కోసం సబ్‌టైటిల్స్ కనుగొనబడలేదు',
     noSubtitlesForVideo: (originalLang, translationLang) => `ఈ వీడియో కోసం సబ్‌టైటిల్స్ కనుగొనబడలేదు (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}" కు అనువాదం కోసం ప్రాథమిక ట్రాన్స్‌క్రిప్ట్ కనుగొనబడలేదు`,
-    loadSubtitlesFailed: 'సబ్‌టైటిల్స్ లోడ్ చేయడం విఫలమైంది'
+    loadSubtitlesFailed: 'సబ్‌టైటిల్స్ లోడ్ చేయడం విఫలమైంది',
+    offlineTranslateA11y: 'ఉపశీర్షికల అనువాదం',
+    offlineTranslateClear: 'ఈ వీడియో యొక్క అన్ని ఉపశీర్షిక అనువాదాలు అన్ని ఇంజిన్‌ల కోసం డేటాబేస్ నుండి తొలగించబడతాయి. ఈ చర్యను రద్దు చేయలేరు.',
+    offlineTranslateNote: 'ఆటోమేటిక్ అనువాదం అందుబాటులోకి వచ్చే వరకు తాత్కాలికంగా ఆఫ్‌లైన్ అనువాదకాన్ని ఆన్ చేస్తున్నాను.'
   },
   swipeUndo: {
     noLanguageSelected: 'భాష ఎంపిక చేయలేదు',
@@ -1308,7 +1311,9 @@ export const te: TranslationSchema = {
       noModelVersion: (hop) => `${hop} మోడల్ యొక్క ఏ వెర్షన్ కూడా లోడ్ కాలేదు`
     },
     tabPc: 'కస్టమ్ API అనువాదకుడు',
-    descriptionPc: 'offline support ద్వారా మీ PCలో అనువాదం (Opus-MT లేదా MADLAD-400). ఫోన్ మరియు PC ఒకే Wi-Fi నెట్‌వర్క్‌లో ఉండాలి.'
+    descriptionPc: 'offline support ద్వారా మీ PCలో అనువాదం (Opus-MT లేదా MADLAD-400). ఫోన్ మరియు PC ఒకే Wi-Fi నెట్‌వర్క్‌లో ఉండాలి.',
+    withContextLabel: 'సందర్భంతో అనువదించు',
+    withContextHint: 'పదం దాని వాక్యంతో, వాక్యం పక్క వాక్యాలతో కలిసి అనువదించబడుతుంది. అనువాదం మరింత ఖచ్చితంగా ఉంటుంది, కానీ నెమ్మదిగా ఉంటుంది.'
   },
   timeOffsetPopup: {
     title: '⏱ ఆఫ్‌సెట్, సెకన్లు',
@@ -1593,6 +1598,8 @@ export const te: TranslationSchema = {
       sentenceFailed: 'వాక్యాన్ని అనువదించడంలో విఫలమైంది',
       skipped: (failed, error) => `దాటవేయబడిన వాక్యాలు: ${failed}. ${error}`,
       bookFailed: 'పుస్తకాన్ని అనువదించడంలో విఫలమైంది',
+      engineSwitched: (failed, from, to, next) => `${failed} ఇంజిన్ ${from}→${to} అనువదించదు. ${next}కి మార్చబడింది.`,
+      subtitlesFailed: 'ఉపశీర్షికలను అనువదించలేకపోయాం'
     },
     tokens: {
       parseFailed: 'పుస్తక టెక్స్ట్‌ను పార్స్ చేయడంలో విఫలమైంది',

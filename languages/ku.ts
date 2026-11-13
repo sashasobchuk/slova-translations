@@ -549,7 +549,10 @@ export const ku: TranslationSchema = {
     noSubtitlesFound: 'Ji bo vê zimanê jêrnivîs nehat dîtin',
     noSubtitlesForVideo: (originalLang, translationLang) => `Ji bo vê vîdyoyê jêrnivîs nehat dîtin (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Transkrîpta bingehîn ji bo wergera bo "${translationLang}" nehat dîtin`,
-    loadSubtitlesFailed: 'Barkirina binnivîsan têk çû'
+    loadSubtitlesFailed: 'Barkirina binnivîsan têk çû',
+    offlineTranslateA11y: 'Wergera jêrnivîsan',
+    offlineTranslateClear: 'Hemû wergerên jêrnivîsên vê vîdyoyê ji bo hemû motoran dê ji databasê bên jêbirin. Ev kar nayê vegerandin.',
+    offlineTranslateNote: 'Heta wergera xweber peyda bibe, wergêra offline bi demkî vedikim.'
   },
   swipeUndo: {
     noLanguageSelected: 'Ziman nehatiye hilbijartin',
@@ -1299,7 +1302,9 @@ export const ku: TranslationSchema = {
       noModelVersion: (hop) => `Tu guhertoyek a modela ${hop} nehat barkirin`
     },
     tabPc: 'Wergêrê API ya taybet',
-    descriptionPc: 'Wergera li ser PC-ya te (Opus-MT an MADLAD-400) bi rêya UI offline support. Divê telefon û PC di heman Wi-Fi de bin.'
+    descriptionPc: 'Wergera li ser PC-ya te (Opus-MT an MADLAD-400) bi rêya UI offline support. Divê telefon û PC di heman Wi-Fi de bin.',
+    withContextLabel: 'Bi çarçoveyê wergerîne',
+    withContextHint: 'Peyv bi hevoka xwe re, hevok jî bi hevokên cîran re tê wergerandin. Werger rasttir e, lê hêdîtir e.'
   },
   timeOffsetPopup: {
     title: '⏱ Offset, s',
@@ -1584,6 +1589,8 @@ export const ku: TranslationSchema = {
       sentenceFailed: 'Wergerandina hevokê bi ser neket',
       skipped: (failed, error) => `Hevokên derbaskirî: ${failed}. ${error}`,
       bookFailed: 'Wergerandina pirtûkê bi ser neket',
+      engineSwitched: (failed, from, to, next) => `Motora ${failed} ${from}→${to} wernagerîne. Hat guhertin bo ${next}.`,
+      subtitlesFailed: 'Jêrnivîs nehatin wergerandin'
     },
     tokens: {
       parseFailed: 'Analîzkirina nivîsa pirtûkê bi ser neket',

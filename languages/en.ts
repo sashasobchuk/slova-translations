@@ -561,7 +561,10 @@ export const en: TranslationSchema = {
     noSubtitlesFound: 'No subtitles found for this language',
     noSubtitlesForVideo: (originalLang, translationLang) => `No subtitles found for this video (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Base transcript for translation to "${translationLang}" not found`,
-    loadSubtitlesFailed: 'Failed to load subtitles'
+    loadSubtitlesFailed: 'Failed to load subtitles',
+    offlineTranslateA11y: 'Subtitle translation',
+    offlineTranslateClear: 'All subtitle translations for this video will be deleted from the database for all engines. This can\'t be undone.',
+    offlineTranslateNote: 'Temporarily switching to the offline translator until automatic translation is available.'
   },
 
   subtitles: {
@@ -1315,7 +1318,9 @@ export const en: TranslationSchema = {
       noModelVersion: (hop) => `No version of the ${hop} model loaded`
     },
     tabPc: 'Custom API translator',
-    descriptionPc: 'Translation on your PC (Opus-MT or MADLAD-400) through UI offline support. The phone and the PC must be on the same Wi-Fi.'
+    descriptionPc: 'Translation on your PC (Opus-MT or MADLAD-400) through UI offline support. The phone and the PC must be on the same Wi-Fi.',
+    withContextLabel: 'Translate with context',
+    withContextHint: 'A word is translated together with its sentence, and a sentence with the neighboring ones. More accurate, but slower.'
   },
   timeOffsetPopup: {
     title: '⏱ Offset, s',
@@ -1600,6 +1605,8 @@ export const en: TranslationSchema = {
       sentenceFailed: 'Could not translate the sentence',
       skipped: (failed, error) => `Sentences skipped: ${failed}. ${error}`,
       bookFailed: 'Could not translate the book',
+      engineSwitched: (failed, from, to, next) => `The ${failed} engine can't translate ${from}→${to}. Switched to ${next}.`,
+      subtitlesFailed: 'Couldn\'t translate the subtitles'
     },
     tokens: {
       parseFailed: 'Could not parse the book text',

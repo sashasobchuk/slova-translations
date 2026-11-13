@@ -548,7 +548,10 @@ export const cs: TranslationSchema = {
     noSubtitlesFound: 'Pro tento jazyk nebyly nalezeny titulky',
     noSubtitlesForVideo: (originalLang, translationLang) => `Pro toto video nebyly nalezeny titulky (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Základní přepis pro překlad do "${translationLang}" nebyl nalezen`,
-    loadSubtitlesFailed: 'Titulky se nepodařilo načíst'
+    loadSubtitlesFailed: 'Titulky se nepodařilo načíst',
+    offlineTranslateA11y: 'Překlad titulků',
+    offlineTranslateClear: 'Všechny překlady titulků tohoto videa budou smazány z databáze pro všechny moduly. Tuto akci nelze vrátit.',
+    offlineTranslateNote: 'Dočasně zapínám offline překladač, dokud nebude k dispozici automatický překlad.'
   },
   swipeUndo: {
     noLanguageSelected: 'Není vybrán žádný jazyk',
@@ -1303,7 +1306,9 @@ export const cs: TranslationSchema = {
       noModelVersion: (hop) => `Žádná verze modelu ${hop} se nenačetla`
     },
     tabPc: 'Vlastní API překladač',
-    descriptionPc: 'Překlad na vašem PC (Opus-MT nebo MADLAD-400) přes UI s podporou offline. Telefon a PC musí být na stejné Wi-Fi.'
+    descriptionPc: 'Překlad na vašem PC (Opus-MT nebo MADLAD-400) přes UI s podporou offline. Telefon a PC musí být na stejné Wi-Fi.',
+    withContextLabel: 'Překládat s kontextem',
+    withContextHint: 'Slovo se překládá spolu s větou, věta spolu se sousedními. Překlad je přesnější, ale pomalejší.'
   },
   timeOffsetPopup: {
     title: '⏱ Posun, s',
@@ -1588,6 +1593,8 @@ export const cs: TranslationSchema = {
       sentenceFailed: 'Větu se nepodařilo přeložit',
       skipped: (failed, error) => `Přeskočeno vět: ${failed}. ${error}`,
       bookFailed: 'Knihu se nepodařilo přeložit',
+      engineSwitched: (failed, from, to, next) => `Modul ${failed} nepřekládá ${from}→${to}. Přepnuto na ${next}.`,
+      subtitlesFailed: 'Titulky se nepodařilo přeložit'
     },
     tokens: {
       parseFailed: 'Text knihy se nepodařilo zpracovat',

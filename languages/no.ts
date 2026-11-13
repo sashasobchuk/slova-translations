@@ -549,7 +549,10 @@ export const no: TranslationSchema = {
     noSubtitlesFound: 'Ingen undertekster funnet for dette språket',
     noSubtitlesForVideo: (originalLang, translationLang) => `Ingen undertekster funnet for denne videoen (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Grunntranskripsjon for oversettelse til "${translationLang}" ble ikke funnet`,
-    loadSubtitlesFailed: 'Kunne ikke laste inn undertekster'
+    loadSubtitlesFailed: 'Kunne ikke laste inn undertekster',
+    offlineTranslateA11y: 'Oversettelse av undertekster',
+    offlineTranslateClear: 'Alle oversettelser av undertekster for denne videoen slettes fra databasen, for alle motorer. Dette kan ikke angres.',
+    offlineTranslateNote: 'Slår midlertidig på frakoblet oversetter til automatisk oversettelse er tilgjengelig.'
   },
   swipeUndo: {
     noLanguageSelected: 'Ingen språk valgt',
@@ -1302,7 +1305,9 @@ export const no: TranslationSchema = {
       noModelVersion: (hop) => `Ingen versjon av modellen ${hop} ble lastet`
     },
     tabPc: 'Egendefinert API-oversetter',
-    descriptionPc: 'Oversettelse på din PC (Opus-MT eller MADLAD-400) via UI offline support. Telefon og PC må være på samme Wi-Fi.'
+    descriptionPc: 'Oversettelse på din PC (Opus-MT eller MADLAD-400) via UI offline support. Telefon og PC må være på samme Wi-Fi.',
+    withContextLabel: 'Oversett med kontekst',
+    withContextHint: 'Et ord oversettes sammen med setningen, en setning sammen med nabosetningene. Oversettelsen blir mer nøyaktig, men tregere.'
   },
   timeOffsetPopup: {
     title: '⏱ Forskyvning, s',
@@ -1587,6 +1592,8 @@ export const no: TranslationSchema = {
       sentenceFailed: 'Kunne ikke oversette setningen',
       skipped: (failed, error) => `Hoppet over setninger: ${failed}. ${error}`,
       bookFailed: 'Kunne ikke oversette boken',
+      engineSwitched: (failed, from, to, next) => `Motoren ${failed} oversetter ikke ${from}→${to}. Byttet til ${next}.`,
+      subtitlesFailed: 'Kunne ikke oversette undertekstene'
     },
     tokens: {
       parseFailed: 'Kunne ikke analysere bokteksten',

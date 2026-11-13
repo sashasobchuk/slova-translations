@@ -554,7 +554,10 @@ export const es: TranslationSchema = {
     noSubtitlesFound: 'No se encontraron subtítulos para este idioma',
     noSubtitlesForVideo: (originalLang, translationLang) => `No se encontraron subtítulos para este video (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `No se encontró la transcripción base para traducir a "${translationLang}"`,
-    loadSubtitlesFailed: 'No se pudieron cargar los subtítulos'
+    loadSubtitlesFailed: 'No se pudieron cargar los subtítulos',
+    offlineTranslateA11y: 'Traducción de subtítulos',
+    offlineTranslateClear: 'Todas las traducciones de subtítulos de este vídeo se eliminarán de la base de datos para todos los motores. Esta acción no se puede deshacer.',
+    offlineTranslateNote: 'Activando temporalmente el traductor sin conexión hasta que haya traducción automática.'
   },
   swipeUndo: {
     noLanguageSelected: 'No se ha seleccionado ningún idioma',
@@ -1310,7 +1313,9 @@ export const es: TranslationSchema = {
       noModelVersion: (hop) => `No se cargó ninguna versión del modelo ${hop}`
     },
     tabPc: 'Traductor con API propia',
-    descriptionPc: 'Traducción en tu PC (Opus-MT o MADLAD-400) mediante el soporte offline de la UI. El teléfono y la PC deben estar en la misma Wi-Fi.'
+    descriptionPc: 'Traducción en tu PC (Opus-MT o MADLAD-400) mediante el soporte offline de la UI. El teléfono y la PC deben estar en la misma Wi-Fi.',
+    withContextLabel: 'Traducir con contexto',
+    withContextHint: 'La palabra se traduce junto con su oración y la oración junto con las vecinas. La traducción es más precisa, pero más lenta.'
   },
   timeOffsetPopup: {
     title: '⏱ Desfase, s',
@@ -1595,6 +1600,8 @@ export const es: TranslationSchema = {
       sentenceFailed: 'No se pudo traducir la oración',
       skipped: (failed, error) => `Oraciones omitidas: ${failed}. ${error}`,
       bookFailed: 'No se pudo traducir el libro',
+      engineSwitched: (failed, from, to, next) => `El motor ${failed} no traduce ${from}→${to}. Se cambió a ${next}.`,
+      subtitlesFailed: 'No se pudieron traducir los subtítulos'
     },
     tokens: {
       parseFailed: 'No se pudo analizar el texto del libro',

@@ -549,7 +549,10 @@ export const ha: TranslationSchema = {
     noSubtitlesFound: 'Ba a sami fassarori don wannan harshe ba',
     noSubtitlesForVideo: (originalLang, translationLang) => `Ba a sami fassarori don wannan bidiyo ba (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Ba a sami rubutun asali don fassara zuwa "${translationLang}" ba`,
-    loadSubtitlesFailed: 'Ba a iya loda fassarori ba'
+    loadSubtitlesFailed: 'Ba a iya loda fassarori ba',
+    offlineTranslateA11y: 'Fassarar rubutun ƙasa',
+    offlineTranslateClear: 'Za a goge duk fassarorin rubutun ƙasa na wannan bidiyon daga rumbun bayanai, ga dukkan injuna. Ba za a iya mayar da wannan ba.',
+    offlineTranslateNote: 'Ana kunna mai fassara ba tare da intanet ba na ɗan lokaci har sai fassarar atomatik ta samu.'
   },
   swipeUndo: {
     noLanguageSelected: 'Ba a zaɓi harshe ba',
@@ -1304,7 +1307,9 @@ export const ha: TranslationSchema = {
       noModelVersion: (hop) => `Babu sigar samfurin ${hop} da ta loda`
     },
     tabPc: 'Mai fassara na API naka a kwamfuta',
-    descriptionPc: 'Fassara a kwamfutarka (Opus-MT ko MADLAD-400) ta UI offline support. Waya da kwamfuta dole su kasance a Wi-Fi ɗaya.'
+    descriptionPc: 'Fassara a kwamfutarka (Opus-MT ko MADLAD-400) ta UI offline support. Waya da kwamfuta dole su kasance a Wi-Fi ɗaya.',
+    withContextLabel: 'Fassara tare da mahallin magana',
+    withContextHint: 'Ana fassara kalma tare da jumlarta, jumla kuma tare da makwabtanta. Fassarar ta fi daidai, amma ta fi jinkiri.'
   },
   timeOffsetPopup: {
     title: '⏱ Pasa, s',
@@ -1589,6 +1594,8 @@ export const ha: TranslationSchema = {
       sentenceFailed: 'Ba a iya fassara jimla ba',
       skipped: (failed, error) => `An tsallake jimloli: ${failed}. ${error}`,
       bookFailed: 'Ba a iya fassara littafin ba',
+      engineSwitched: (failed, from, to, next) => `Injin ${failed} ba ya fassara ${from}→${to}. An canza zuwa ${next}.`,
+      subtitlesFailed: 'Ba a iya fassara rubutun ƙasa ba'
     },
     tokens: {
       parseFailed: 'Ba a iya karanta rubutun littafin ba',

@@ -555,7 +555,10 @@ export const fr: TranslationSchema = {
     noSubtitlesFound: 'Aucun sous-titre trouvé pour cette langue',
     noSubtitlesForVideo: (originalLang, translationLang) => `Aucun sous-titre trouvé pour cette vidéo (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Transcription de base pour la traduction en "${translationLang}" introuvable`,
-    loadSubtitlesFailed: 'Impossible de charger les sous-titres'
+    loadSubtitlesFailed: 'Impossible de charger les sous-titres',
+    offlineTranslateA11y: 'Traduction des sous-titres',
+    offlineTranslateClear: 'Toutes les traductions de sous-titres de cette vidéo seront supprimées de la base de données, pour tous les moteurs. Cette action est irréversible.',
+    offlineTranslateNote: 'Activation temporaire du traducteur hors ligne en attendant la traduction automatique.'
   },
   swipeUndo: {
     noLanguageSelected: 'Aucune langue sélectionnée',
@@ -1309,7 +1312,9 @@ export const fr: TranslationSchema = {
       noModelVersion: (hop) => `Aucune version du modèle ${hop} n'a pu être chargée`
     },
     tabPc: 'API Traducteur Personnalisé',
-    descriptionPc: 'Traduction sur votre PC (Opus-MT ou MADLAD-400) via UI offline support. Téléphone et PC sur le même Wi-Fi.'
+    descriptionPc: 'Traduction sur votre PC (Opus-MT ou MADLAD-400) via UI offline support. Téléphone et PC sur le même Wi-Fi.',
+    withContextLabel: 'Traduire avec le contexte',
+    withContextHint: 'Le mot est traduit avec sa phrase, la phrase avec les phrases voisines. La traduction est plus précise, mais plus lente.'
   },
   timeOffsetPopup: {
     title: '⏱ Décalage, s',
@@ -1594,6 +1599,8 @@ export const fr: TranslationSchema = {
       sentenceFailed: 'Échec de la traduction de la phrase',
       skipped: (failed, error) => `Phrases ignorées : ${failed}. ${error}`,
       bookFailed: 'Échec de la traduction du livre',
+      engineSwitched: (failed, from, to, next) => `Le moteur ${failed} ne traduit pas ${from}→${to}. Basculé sur ${next}.`,
+      subtitlesFailed: 'Impossible de traduire les sous-titres'
     },
     tokens: {
       parseFailed: 'Échec de l’analyse du texte du livre',

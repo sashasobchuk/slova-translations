@@ -555,7 +555,10 @@ export const hi: TranslationSchema = {
     noSubtitlesFound: 'इस भाषा के लिए कोई उपशीर्षक नहीं मिला',
     noSubtitlesForVideo: (originalLang, translationLang) => `इस वीडियो के लिए कोई उपशीर्षक नहीं मिला (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}" में अनुवाद के लिए आधारभूत ट्रांसक्रिप्ट नहीं मिला`,
-    loadSubtitlesFailed: 'उपशीर्षक लोड नहीं हो सके'
+    loadSubtitlesFailed: 'उपशीर्षक लोड नहीं हो सके',
+    offlineTranslateA11y: 'उपशीर्षक अनुवाद',
+    offlineTranslateClear: 'इस वीडियो के सभी उपशीर्षक अनुवाद सभी इंजनों के लिए डेटाबेस से हटा दिए जाएँगे। इसे पूर्ववत नहीं किया जा सकता।',
+    offlineTranslateNote: 'स्वचालित अनुवाद उपलब्ध होने तक अस्थायी रूप से ऑफ़लाइन अनुवादक चालू कर रहा हूँ।'
   },
   swipeUndo: {
     noLanguageSelected: 'कोई भाषा चयनित नहीं है',
@@ -1310,7 +1313,9 @@ export const hi: TranslationSchema = {
       noModelVersion: (hop) => `${hop} मॉडल का कोई भी संस्करण लोड नहीं हुआ`
     },
     tabPc: 'कस्टम API अनुवादक',
-    descriptionPc: 'UI offline support के माध्यम से आपके PC पर अनुवाद (Opus-MT या MADLAD-400)। फ़ोन और PC एक ही Wi-Fi पर होने चाहिए।'
+    descriptionPc: 'UI offline support के माध्यम से आपके PC पर अनुवाद (Opus-MT या MADLAD-400)। फ़ोन और PC एक ही Wi-Fi पर होने चाहिए।',
+    withContextLabel: 'संदर्भ के साथ अनुवाद',
+    withContextHint: 'शब्द का अनुवाद उसके वाक्य के साथ, और वाक्य का अनुवाद पड़ोसी वाक्यों के साथ होता है। अनुवाद अधिक सटीक, लेकिन धीमा होता है।'
   },
   timeOffsetPopup: {
     title: '⏱ ऑफ़सेट, सेकंड',
@@ -1595,6 +1600,8 @@ export const hi: TranslationSchema = {
       sentenceFailed: 'वाक्य का अनुवाद नहीं हो सका',
       skipped: (failed, error) => `छोड़े गए वाक्य: ${failed}। ${error}`,
       bookFailed: 'किताब का अनुवाद नहीं हो सका',
+      engineSwitched: (failed, from, to, next) => `${failed} इंजन ${from}→${to} का अनुवाद नहीं करता। ${next} पर स्विच किया गया।`,
+      subtitlesFailed: 'उपशीर्षकों का अनुवाद नहीं हो सका'
     },
     tokens: {
       parseFailed: 'किताब का टेक्स्ट प्रोसेस नहीं हो सका',

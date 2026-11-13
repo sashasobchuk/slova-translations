@@ -549,7 +549,10 @@ export const it: TranslationSchema = {
     noSubtitlesFound: 'Nessun sottotitolo trovato per questa lingua',
     noSubtitlesForVideo: (originalLang, translationLang) => `Nessun sottotitolo trovato per questo video (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Trascrizione di base per la traduzione in "${translationLang}" non trovata`,
-    loadSubtitlesFailed: 'Impossibile caricare i sottotitoli'
+    loadSubtitlesFailed: 'Impossibile caricare i sottotitoli',
+    offlineTranslateA11y: 'Traduzione dei sottotitoli',
+    offlineTranslateClear: 'Tutte le traduzioni dei sottotitoli di questo video verranno eliminate dal database, per tutti i motori. Questa azione non può essere annullata.',
+    offlineTranslateNote: 'Attivo temporaneamente il traduttore offline finché non è disponibile la traduzione automatica.'
   },
   swipeUndo: {
     noLanguageSelected: 'Nessuna lingua selezionata',
@@ -1305,7 +1308,9 @@ export const it: TranslationSchema = {
       noModelVersion: (hop) => `Nessuna versione del modello ${hop} è stata caricata`
     },
     tabPc: 'API Traduttore Personalizzato',
-    descriptionPc: 'Traduzione su tuo PC (Opus-MT o MADLAD-400) via UI offline support. Telefono e PC su stesso Wi-Fi.'
+    descriptionPc: 'Traduzione su tuo PC (Opus-MT o MADLAD-400) via UI offline support. Telefono e PC su stesso Wi-Fi.',
+    withContextLabel: 'Traduci con contesto',
+    withContextHint: 'La parola viene tradotta insieme alla sua frase, la frase insieme a quelle vicine. La traduzione è più precisa, ma più lenta.'
   },
   timeOffsetPopup: {
     title: '⏱ Sfasamento, s',
@@ -1590,6 +1595,8 @@ export const it: TranslationSchema = {
       sentenceFailed: 'Traduzione frase fallita',
       skipped: (failed, error) => `Frasi saltate: ${failed}. ${error}`,
       bookFailed: 'Traduzione libro fallita',
+      engineSwitched: (failed, from, to, next) => `Il motore ${failed} non traduce ${from}→${to}. Passato a ${next}.`,
+      subtitlesFailed: 'Impossibile tradurre i sottotitoli'
     },
     tokens: {
       parseFailed: 'Analisi testo libro fallita',

@@ -554,7 +554,10 @@ export const ja: TranslationSchema = {
     noSubtitlesFound: 'この言語の字幕が見つかりません',
     noSubtitlesForVideo: (originalLang, translationLang) => `この動画の字幕が見つかりません (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}"への翻訳用の基本トランスクリプトが見つかりません`,
-    loadSubtitlesFailed: '字幕を読み込めませんでした'
+    loadSubtitlesFailed: '字幕を読み込めませんでした',
+    offlineTranslateA11y: '字幕の翻訳',
+    offlineTranslateClear: 'この動画の字幕翻訳は、すべてのエンジン分がデータベースから削除されます。この操作は元に戻せません。',
+    offlineTranslateNote: '自動翻訳が利用できるまで、一時的にオフライン翻訳を使用します。'
   },
   swipeUndo: {
     noLanguageSelected: '言語が選択されていません',
@@ -1309,7 +1312,9 @@ export const ja: TranslationSchema = {
       noModelVersion: (hop) => `モデル ${hop} のどのバージョンも読み込めませんでした`
     },
     tabPc: 'カスタム翻訳API',
-    descriptionPc: 'PC上の翻訳 (Opus-MT または MADLAD-400) をオフラインサポートUI経由。スマホとPCは同じWi-Fiにいる必要があります。'
+    descriptionPc: 'PC上の翻訳 (Opus-MT または MADLAD-400) をオフラインサポートUI経由。スマホとPCは同じWi-Fiにいる必要があります。',
+    withContextLabel: '文脈を考慮して翻訳',
+    withContextHint: '単語は文と一緒に、文は前後の文と一緒に翻訳されます。より正確になりますが、時間がかかります。'
   },
   timeOffsetPopup: {
     title: '⏱ オフセット、秒',
@@ -1594,6 +1599,8 @@ export const ja: TranslationSchema = {
       sentenceFailed: '文の翻訳に失敗しました',
       skipped: (failed, error) => `スキップした文: ${failed}. ${error}`,
       bookFailed: '本の翻訳に失敗しました',
+      engineSwitched: (failed, from, to, next) => `${failed} エンジンは ${from}→${to} を翻訳できません。${next} に切り替えました。`,
+      subtitlesFailed: '字幕を翻訳できませんでした'
     },
     tokens: {
       parseFailed: '本のテキスト解析に失敗しました',

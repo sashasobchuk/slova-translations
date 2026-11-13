@@ -554,7 +554,10 @@ export const bn: TranslationSchema = {
     noSubtitlesFound: 'এই ভাষার জন্য কোনো সাবটাইটেল পাওয়া যায়নি',
     noSubtitlesForVideo: (originalLang, translationLang) => `এই ভিডিওর জন্য কোনো সাবটাইটেল পাওয়া যায়নি (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}"-এ অনুবাদের জন্য মূল ট্রান্সক্রিপ্ট পাওয়া যায়নি`,
-    loadSubtitlesFailed: 'সাবটাইটেল লোড করা যায়নি'
+    loadSubtitlesFailed: 'সাবটাইটেল লোড করা যায়নি',
+    offlineTranslateA11y: 'সাবটাইটেল অনুবাদ',
+    offlineTranslateClear: 'এই ভিডিওর সব সাবটাইটেল অনুবাদ সব ইঞ্জিনের জন্য ডেটাবেস থেকে মুছে ফেলা হবে। এটি পূর্বাবস্থায় ফেরানো যাবে না।',
+    offlineTranslateNote: 'স্বয়ংক্রিয় অনুবাদ না পাওয়া পর্যন্ত সাময়িকভাবে অফলাইন অনুবাদক চালু করছি।'
   },
   swipeUndo: {
     noLanguageSelected: 'কোনো ভাষা নির্বাচন করা হয়নি',
@@ -1309,7 +1312,9 @@ export const bn: TranslationSchema = {
       noModelVersion: (hop) => `${hop} মডেলের কোনো সংস্করণই লোড হয়নি`
     },
     tabPc: 'নিজস্ব API অনুবাদক',
-    descriptionPc: 'আপনার কম্পিউটারে অনুবাদ (Opus-MT বা MADLAD-400), UI-এর offline সমর্থনের মাধ্যমে। ফোন ও কম্পিউটার একই Wi-Fi-তে থাকতে হবে।'
+    descriptionPc: 'আপনার কম্পিউটারে অনুবাদ (Opus-MT বা MADLAD-400), UI-এর offline সমর্থনের মাধ্যমে। ফোন ও কম্পিউটার একই Wi-Fi-তে থাকতে হবে।',
+    withContextLabel: 'প্রসঙ্গসহ অনুবাদ',
+    withContextHint: 'শব্দ তার বাক্যের সঙ্গে, আর বাক্য পাশের বাক্যগুলোর সঙ্গে অনুবাদ হয়। অনুবাদ আরও নির্ভুল, তবে ধীর।'
   },
   timeOffsetPopup: {
     title: '⏱ অফসেট, সেকেন্ড',
@@ -1594,6 +1599,8 @@ export const bn: TranslationSchema = {
       sentenceFailed: 'বাক্যটি অনুবাদ করা যায়নি',
       skipped: (failed, error) => `বাদ দেওয়া বাক্য: ${failed}। ${error}`,
       bookFailed: 'বইটি অনুবাদ করা যায়নি',
+      engineSwitched: (failed, from, to, next) => `${failed} ইঞ্জিন ${from}→${to} অনুবাদ করতে পারে না। ${next}-এ পরিবর্তন করা হয়েছে।`,
+      subtitlesFailed: 'সাবটাইটেল অনুবাদ করা যায়নি'
     },
     tokens: {
       parseFailed: 'বইয়ের লেখা বিশ্লেষণ করা যায়নি',

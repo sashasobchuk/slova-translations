@@ -549,7 +549,10 @@ export const he: TranslationSchema = {
     noSubtitlesFound: 'לא נמצאו כתוביות לשפה זו',
     noSubtitlesForVideo: (originalLang, translationLang) => `לא נמצאו כתוביות לסרטון זה (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `לא נמצא תמליל בסיס לתרגום ל-"${translationLang}"`,
-    loadSubtitlesFailed: 'טעינת הכתוביות נכשלה'
+    loadSubtitlesFailed: 'טעינת הכתוביות נכשלה',
+    offlineTranslateA11y: 'תרגום כתוביות',
+    offlineTranslateClear: 'כל תרגומי הכתוביות של סרטון זה יימחקו ממסד הנתונים, עבור כל המנועים. לא ניתן לבטל פעולה זו.',
+    offlineTranslateNote: 'מפעיל זמנית את המתרגם הלא מקוון עד שיהיה תרגום אוטומטי.'
   },
   swipeUndo: {
     noLanguageSelected: 'לא נבחרה שפה',
@@ -1303,7 +1306,9 @@ export const he: TranslationSchema = {
       noModelVersion: (hop) => `אף גרסה של המודל ${hop} לא נטענה`
     },
     tabPc: 'מתרגם API משלי במחשב',
-    descriptionPc: 'תרגום במחשב שלך (Opus-MT או MADLAD-400) דרך UI offline support. הטלפון והמחשב חייבים להיות באותה Wi-Fi.'
+    descriptionPc: 'תרגום במחשב שלך (Opus-MT או MADLAD-400) דרך UI offline support. הטלפון והמחשב חייבים להיות באותה Wi-Fi.',
+    withContextLabel: 'תרגום עם הקשר',
+    withContextHint: 'מילה מתורגמת יחד עם המשפט שלה, ומשפט יחד עם המשפטים הסמוכים. התרגום מדויק יותר, אך איטי יותר.'
   },
   timeOffsetPopup: {
     title: '⏱ היסט, שניות',
@@ -1588,6 +1593,8 @@ export const he: TranslationSchema = {
       sentenceFailed: 'לא ניתן לתרגם את המשפט',
       skipped: (failed, error) => `משפטים שדולגו: ${failed}. ${error}`,
       bookFailed: 'לא ניתן לתרגם את הספר',
+      engineSwitched: (failed, from, to, next) => `המנוע ${failed} לא מתרגם ${from}→${to}. הועבר ל-${next}.`,
+      subtitlesFailed: 'לא ניתן לתרגם את הכתוביות'
     },
     tokens: {
       parseFailed: 'לא ניתן לנתח את טקסט הספר',

@@ -555,7 +555,10 @@ export const mr: TranslationSchema = {
     noSubtitlesFound: 'या भाषेसाठी कोणतेही उपशीर्षक सापडले नाहीत',
     noSubtitlesForVideo: (originalLang, translationLang) => `या व्हिडिओसाठी कोणतेही उपशीर्षक सापडले नाहीत (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}" मध्ये अनुवादासाठी मूळ ट्रान्सक्रिप्ट सापडले नाही`,
-    loadSubtitlesFailed: 'उपशीर्षक लोड करता आले नाही'
+    loadSubtitlesFailed: 'उपशीर्षक लोड करता आले नाही',
+    offlineTranslateA11y: 'उपशीर्षक भाषांतर',
+    offlineTranslateClear: 'या व्हिडिओची सर्व उपशीर्षक भाषांतरे सर्व इंजिनांसाठी डेटाबेसमधून हटवली जातील. ही क्रिया पूर्ववत करता येणार नाही.',
+    offlineTranslateNote: 'स्वयंचलित भाषांतर उपलब्ध होईपर्यंत तात्पुरता ऑफलाइन अनुवादक सुरू करत आहे.'
   },
   swipeUndo: {
     noLanguageSelected: 'कोणतीही भाषा निवडलेली नाही',
@@ -1309,7 +1312,9 @@ export const mr: TranslationSchema = {
       noModelVersion: (hop) => `${hop} मॉडेलची कोणतीही आवृत्ती लोड झाली नाही`
     },
     tabPc: 'सानुकूल API भाषांतरकार',
-    descriptionPc: 'UI offline support द्वारे तुमच्या PC वर भाषांतर (Opus-MT किंवा MADLAD-400). फोन आणि PC एकाच Wi-Fi मध्ये असले पाहिजेत.'
+    descriptionPc: 'UI offline support द्वारे तुमच्या PC वर भाषांतर (Opus-MT किंवा MADLAD-400). फोन आणि PC एकाच Wi-Fi मध्ये असले पाहिजेत.',
+    withContextLabel: 'संदर्भासह भाषांतर',
+    withContextHint: 'शब्द त्याच्या वाक्यासह आणि वाक्य शेजारच्या वाक्यांसह भाषांतरित होते. भाषांतर अधिक अचूक, पण संथ असते.'
   },
   timeOffsetPopup: {
     title: '⏱ ऑफसेट, सेकंद',
@@ -1594,6 +1599,8 @@ export const mr: TranslationSchema = {
       sentenceFailed: 'वाक्याचे भाषांतर करण्यात अयशस्वी',
       skipped: (failed, error) => `गमावलेली वाक्ये: ${failed}. ${error}`,
       bookFailed: 'पुस्तकाचे भाषांतर करण्यात अयशस्वी',
+      engineSwitched: (failed, from, to, next) => `${failed} इंजिन ${from}→${to} भाषांतर करत नाही. ${next} वर बदलले.`,
+      subtitlesFailed: 'उपशीर्षकांचे भाषांतर करता आले नाही'
     },
     tokens: {
       parseFailed: 'पुस्तकाचा मजकूर पार्स करण्यात अयशस्वी',

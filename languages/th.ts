@@ -558,7 +558,10 @@ export const th: TranslationSchema = {
     noSubtitlesFound: 'ไม่พบคำบรรยายสำหรับภาษานี้',
     noSubtitlesForVideo: (originalLang, translationLang) => `ไม่พบคำบรรยายสำหรับวิดีโอนี้ (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `ไม่พบข้อความพื้นฐานสำหรับแปลเป็น "${translationLang}"`,
-    loadSubtitlesFailed: 'โหลดคำบรรยายไม่สำเร็จ'
+    loadSubtitlesFailed: 'โหลดคำบรรยายไม่สำเร็จ',
+    offlineTranslateA11y: 'การแปลคำบรรยาย',
+    offlineTranslateClear: 'คำแปลคำบรรยายทั้งหมดของวิดีโอนี้จะถูกลบออกจากฐานข้อมูลสำหรับทุกเอนจิน การดำเนินการนี้ไม่สามารถย้อนกลับได้',
+    offlineTranslateNote: 'เปิดตัวแปลแบบออฟไลน์ชั่วคราวจนกว่าจะมีคำแปลอัตโนมัติ'
   },
   swipeUndo: {
     noLanguageSelected: 'ไม่ได้เลือกภาษา',
@@ -1311,7 +1314,9 @@ export const th: TranslationSchema = {
       noModelVersion: (hop) => `โหลดโมเดล ${hop} ไม่ได้สักเวอร์ชัน`
     },
     tabPc: 'ตัวแปล API ของฉัน',
-    descriptionPc: 'แปลบนพีซีของคุณ (Opus-MT หรือ MADLAD-400) ผ่าน UI offline support โทรศัพท์และพีซีต้องอยู่ใน Wi-Fi เดียวกัน'
+    descriptionPc: 'แปลบนพีซีของคุณ (Opus-MT หรือ MADLAD-400) ผ่าน UI offline support โทรศัพท์และพีซีต้องอยู่ใน Wi-Fi เดียวกัน',
+    withContextLabel: 'แปลพร้อมบริบท',
+    withContextHint: 'คำจะถูกแปลพร้อมกับประโยค และประโยคจะถูกแปลพร้อมกับประโยคข้างเคียง แม่นยำขึ้นแต่ช้าลง'
   },
   timeOffsetPopup: {
     title: '⏱ ออฟเซ็ต, วินาที',
@@ -1596,6 +1601,8 @@ export const th: TranslationSchema = {
       sentenceFailed: 'แปลประโยคไม่สำเร็จ',
       skipped: (failed, error) => `ข้ามประโยคไป: ${failed}. ${error}`,
       bookFailed: 'แปลหนังสือไม่สำเร็จ',
+      engineSwitched: (failed, from, to, next) => `เอนจิน ${failed} แปล ${from}→${to} ไม่ได้ เปลี่ยนเป็น ${next} แล้ว`,
+      subtitlesFailed: 'ไม่สามารถแปลคำบรรยายได้'
     },
     tokens: {
       parseFailed: 'วิเคราะห์ข้อความของหนังสือไม่สำเร็จ',

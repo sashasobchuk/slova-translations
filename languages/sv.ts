@@ -549,7 +549,10 @@ export const sv: TranslationSchema = {
     noSubtitlesFound: 'Inga undertexter hittades för detta språk',
     noSubtitlesForVideo: (originalLang, translationLang) => `Inga undertexter hittades för den här videon (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Grundtranskript för översättning till "${translationLang}" hittades inte`,
-    loadSubtitlesFailed: 'Det gick inte att läsa in undertexterna'
+    loadSubtitlesFailed: 'Det gick inte att läsa in undertexterna',
+    offlineTranslateA11y: 'Översättning av undertexter',
+    offlineTranslateClear: 'Alla översättningar av undertexter för den här videon raderas från databasen, för alla motorer. Det går inte att ångra.',
+    offlineTranslateNote: 'Slår tillfälligt på offlineöversättaren tills automatisk översättning finns.'
   },
   swipeUndo: {
     noLanguageSelected: 'Inget språk valt',
@@ -1303,7 +1306,9 @@ export const sv: TranslationSchema = {
       noModelVersion: (hop) => `Ingen version av modellen ${hop} kunde läsas in`
     },
     tabPc: 'Custom Översättare API',
-    descriptionPc: 'Översättning på din PC (Opus-MT eller MADLAD-400) via offline support UI. Telefon och PC på samma Wi-Fi.'
+    descriptionPc: 'Översättning på din PC (Opus-MT eller MADLAD-400) via offline support UI. Telefon och PC på samma Wi-Fi.',
+    withContextLabel: 'Översätt med kontext',
+    withContextHint: 'Ett ord översätts tillsammans med sin mening, en mening tillsammans med de intilliggande. Översättningen blir mer exakt, men långsammare.'
   },
   timeOffsetPopup: {
     title: '⏱ Förskjutning, s',
@@ -1588,6 +1593,8 @@ export const sv: TranslationSchema = {
       sentenceFailed: 'Kunde inte översätta meningen',
       skipped: (failed, error) => `Hoppade över meningar: ${failed}. ${error}`,
       bookFailed: 'Kunde inte översätta boken',
+      engineSwitched: (failed, from, to, next) => `Motorn ${failed} översätter inte ${from}→${to}. Bytte till ${next}.`,
+      subtitlesFailed: 'Det gick inte att översätta undertexterna'
     },
     tokens: {
       parseFailed: 'Kunde inte tolka bokens text',

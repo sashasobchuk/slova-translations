@@ -549,7 +549,10 @@ export const pnb: TranslationSchema = {
     noSubtitlesFound: 'اس بولی لئی کوئی سبٹائٹل نہیں ملیا',
     noSubtitlesForVideo: (originalLang, translationLang) => `اس ویڈیو لئی کوئی سبٹائٹل نہیں ملیا (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}" وچ ترجمے لئی بنیادی ٹرانسکرپٹ نہیں ملیا`,
-    loadSubtitlesFailed: 'سب ٹائٹل لوڈ نہیں ہو سکے'
+    loadSubtitlesFailed: 'سب ٹائٹل لوڈ نہیں ہو سکے',
+    offlineTranslateA11y: 'سب ٹائٹل ترجمہ',
+    offlineTranslateClear: 'ایس ویڈیو دے سارے سب ٹائٹل ترجمے سارے انجناں لئی ڈیٹابیس توں مٹا دتے جان گے۔ ایہہ کم واپس نئیں ہو سکدا۔',
+    offlineTranslateNote: 'جدوں تیک خودکار ترجمہ نئیں ملدا، عارضی طور تے آف لائن مترجم چلا رہیا واں۔'
   },
   swipeUndo: {
     noLanguageSelected: 'کوئی زبان چُنی نئیں گئی',
@@ -1302,7 +1305,9 @@ export const pnb: TranslationSchema = {
       noModelVersion: (hop) => `${hop} ماڈل دا کوئی ورژن لوڈ نہیں ہویا`
     },
     tabPc: 'کسٹম API ترجمہ کار',
-    descriptionPc: 'UI offline support ਰਾਹੀਂ تہاڈے PC تے ترجمہ (Opus-MT یا MADLAD-400)۔ فون تے PC اکو Wi-Fi اتے ہونے چاہیدے نیں۔'
+    descriptionPc: 'UI offline support ਰਾਹੀਂ تہاڈے PC تے ترجمہ (Opus-MT یا MADLAD-400)۔ فون تے PC اکو Wi-Fi اتے ہونے چاہیدے نیں۔',
+    withContextLabel: 'پرسنگ نال ترجمہ',
+    withContextHint: 'لفظ اپنے جملے نال، تے جملہ نیڑلے جملیاں نال ترجمہ ہوندا اے۔ ترجمہ ودھ درست پر ہولی ہوندا اے۔'
   },
   timeOffsetPopup: {
     title: '⏱ آفسیٹ، سیکنڈ',
@@ -1587,6 +1592,8 @@ export const pnb: TranslationSchema = {
       sentenceFailed: 'جملے دا ترجمہ کرن وچ ناکامی',
       skipped: (failed, error) => `چھڈے گئے جملے: ${failed}. ${error}`,
       bookFailed: 'کتاب دا ترجمہ کرن وچ ناکامی',
+      engineSwitched: (failed, from, to, next) => `${failed} انجن ${from}→${to} دا ترجمہ نئیں کردا۔ ${next} تے بدل دتا گیا۔`,
+      subtitlesFailed: 'سب ٹائٹلاں دا ترجمہ نئیں ہو سکیا'
     },
     tokens: {
       parseFailed: 'کتاب دا متن پارس کرن وچ ناکامی',

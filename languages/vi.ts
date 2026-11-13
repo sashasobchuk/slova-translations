@@ -555,7 +555,10 @@ export const vi: TranslationSchema = {
     noSubtitlesFound: 'Không tìm thấy phụ đề cho ngôn ngữ này',
     noSubtitlesForVideo: (originalLang, translationLang) => `Không tìm thấy phụ đề cho video này (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Không tìm thấy bản ghi cơ sở để dịch sang "${translationLang}"`,
-    loadSubtitlesFailed: 'Không thể tải phụ đề'
+    loadSubtitlesFailed: 'Không thể tải phụ đề',
+    offlineTranslateA11y: 'Dịch phụ đề',
+    offlineTranslateClear: 'Tất cả bản dịch phụ đề của video này sẽ bị xóa khỏi cơ sở dữ liệu, cho mọi công cụ. Không thể hoàn tác thao tác này.',
+    offlineTranslateNote: 'Tạm thời bật trình dịch ngoại tuyến cho đến khi có bản dịch tự động.'
   },
   swipeUndo: {
     noLanguageSelected: 'Chưa chọn ngôn ngữ',
@@ -1308,7 +1311,9 @@ export const vi: TranslationSchema = {
       noModelVersion: (hop) => `Không có phiên bản nào của mô hình ${hop} được tải`
     },
     tabPc: 'Trình dịch API tùy chỉnh',
-    descriptionPc: 'Dịch trên PC của bạn (Opus-MT hoặc MADLAD-400) qua UI offline support. Điện thoại và PC phải ở cùng mạng Wi-Fi.'
+    descriptionPc: 'Dịch trên PC của bạn (Opus-MT hoặc MADLAD-400) qua UI offline support. Điện thoại và PC phải ở cùng mạng Wi-Fi.',
+    withContextLabel: 'Dịch kèm ngữ cảnh',
+    withContextHint: 'Từ được dịch cùng với câu chứa nó, câu được dịch cùng với các câu lân cận. Bản dịch chính xác hơn nhưng chậm hơn.'
   },
   timeOffsetPopup: {
     title: '⏱ Độ trễ, s',
@@ -1593,6 +1598,8 @@ export const vi: TranslationSchema = {
       sentenceFailed: 'Không thể dịch câu',
       skipped: (failed, error) => `Đã bỏ qua số câu: ${failed}. ${error}`,
       bookFailed: 'Không thể dịch sách',
+      engineSwitched: (failed, from, to, next) => `Công cụ ${failed} không dịch được ${from}→${to}. Đã chuyển sang ${next}.`,
+      subtitlesFailed: 'Không thể dịch phụ đề'
     },
     tokens: {
       parseFailed: 'Không thể phân tích văn bản sách',

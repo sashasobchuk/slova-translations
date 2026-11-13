@@ -552,7 +552,10 @@ export const de: TranslationSchema = {
     noSubtitlesFound: 'Keine Untertitel für diese Sprache gefunden',
     noSubtitlesForVideo: (originalLang, translationLang) => `Keine Untertitel für dieses Video gefunden (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Basis-Transkript für die Übersetzung nach "${translationLang}" nicht gefunden`,
-    loadSubtitlesFailed: 'Untertitel konnten nicht geladen werden'
+    loadSubtitlesFailed: 'Untertitel konnten nicht geladen werden',
+    offlineTranslateA11y: 'Übersetzung der Untertitel',
+    offlineTranslateClear: 'Alle Untertitelübersetzungen dieses Videos werden für alle Engines aus der Datenbank gelöscht. Dies kann nicht rückgängig gemacht werden.',
+    offlineTranslateNote: 'Bis eine automatische Übersetzung verfügbar ist, wird vorübergehend der Offline-Übersetzer verwendet.'
   },
   swipeUndo: {
     noLanguageSelected: 'Keine Sprache ausgewählt',
@@ -1306,7 +1309,9 @@ export const de: TranslationSchema = {
       noModelVersion: (hop) => `Keine Version des Modells ${hop} konnte geladen werden`
     },
     tabPc: 'Eigener API-Übersetzer',
-    descriptionPc: 'Übersetzung auf Ihrem PC (Opus-MT oder MADLAD-400) über die UI für Offline-Unterstützung. Telefon und PC müssen im selben WLAN sein.'
+    descriptionPc: 'Übersetzung auf Ihrem PC (Opus-MT oder MADLAD-400) über die UI für Offline-Unterstützung. Telefon und PC müssen im selben WLAN sein.',
+    withContextLabel: 'Mit Kontext übersetzen',
+    withContextHint: 'Ein Wort wird zusammen mit seinem Satz übersetzt, ein Satz zusammen mit den benachbarten. Die Übersetzung ist genauer, aber langsamer.'
   },
   timeOffsetPopup: {
     title: '⏱ Versatz, s',
@@ -1591,6 +1596,8 @@ export const de: TranslationSchema = {
       sentenceFailed: 'Satz konnte nicht übersetzt werden',
       skipped: (failed, error) => `Übersprungene Sätze: ${failed}. ${error}`,
       bookFailed: 'Buch konnte nicht übersetzt werden',
+      engineSwitched: (failed, from, to, next) => `Die Engine ${failed} übersetzt ${from}→${to} nicht. Auf ${next} umgeschaltet.`,
+      subtitlesFailed: 'Untertitel konnten nicht übersetzt werden'
     },
     tokens: {
       parseFailed: 'Buchtext konnte nicht verarbeitet werden',

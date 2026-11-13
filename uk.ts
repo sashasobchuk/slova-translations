@@ -621,7 +621,10 @@ export const uk = {
     noSubtitlesFound: 'Не знайдено субтитри такою мовою',
     noSubtitlesForVideo: (originalLang, translationLang) => `Не знайдено субтитрів для цього відео (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Базовий транскрипт для перекладу на "${translationLang}" не знайдено`,
-    loadSubtitlesFailed: 'Не вдалося завантажити субтитри'
+    loadSubtitlesFailed: 'Не вдалося завантажити субтитри',
+    offlineTranslateA11y: 'Переклад субтитрів',
+    offlineTranslateClear: 'Усі переклади субтитрів цього відео буде видалено з бази, для всіх рушіїв. Цю дію не можна скасувати.',
+    offlineTranslateNote: 'Тимчасово вмикаю офлайн-перекладач, поки немає автоматичного перекладу.'
   },
 
   subtitles: {
@@ -1334,7 +1337,9 @@ export const uk = {
       noModelVersion: (hop) => `Жодна версія моделі ${hop} не завантажилась`
     },
     tabPc: 'Кастомний API перекладач',
-    descriptionPc: 'Переклад на твоєму ПК (Opus-MT або MADLAD-400) через UI offline support. Телефон і ПК мають бути в одній Wi-Fi.'
+    descriptionPc: 'Переклад на твоєму ПК (Opus-MT або MADLAD-400) через UI offline support. Телефон і ПК мають бути в одній Wi-Fi.',
+    withContextLabel: 'Перекладати з контекстом',
+    withContextHint: 'Слово перекладається разом із реченням, речення — разом із сусідніми. Переклад точніший, але повільніший.'
   },
   timeOffsetPopup: {
     title: '⏱ Зміщення, с',
@@ -1619,6 +1624,8 @@ export const uk = {
       sentenceFailed: 'Не вдалось перекласти речення',
       skipped: (failed, error) => `Пропущено речень: ${failed}. ${error}`,
       bookFailed: 'Не вдалось перекласти книгу',
+      engineSwitched: (failed, from, to, next) => `Рушій ${failed} не перекладає ${from}→${to}. Переключено на ${next}.`,
+      subtitlesFailed: 'Не вдалось перекласти субтитри'
     },
     tokens: {
       parseFailed: 'Не вдалось розібрати текст книги',

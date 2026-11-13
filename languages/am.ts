@@ -558,7 +558,10 @@ export const am: TranslationSchema = {
     noSubtitlesFound: 'ለዚህ ቋንቋ ምንም ንዑስ አርእስቶች አልተገኙም',
     noSubtitlesForVideo: (originalLang, translationLang) => `ለዚህ ቪዲዮ ምንም ንዑስ አርእስቶች አልተገኙም (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `ወደ "${translationLang}" ለመተርጎም የተዘጋጀ ጽሑፍ አልተገኘም`,
-    loadSubtitlesFailed: 'ንዑስ ርዕሶችን መጫን አልተቻለም'
+    loadSubtitlesFailed: 'ንዑስ ርዕሶችን መጫን አልተቻለም',
+    offlineTranslateA11y: 'የትርጉም ጽሑፍ ትርጉም',
+    offlineTranslateClear: 'የዚህ ቪዲዮ ሁሉም የትርጉም ጽሑፍ ትርጉሞች ለሁሉም ሞተሮች ከመረጃ ቋቱ ይሰረዛሉ። ይህ ሊቀለበስ አይችልም።',
+    offlineTranslateNote: 'አውቶማቲክ ትርጉም እስኪገኝ ድረስ ከመስመር ውጭ ተርጓሚውን ለጊዜው አበራለሁ።'
   },
   swipeUndo: {
     noLanguageSelected: 'ቋንቋ አልተመረጠም',
@@ -1258,7 +1261,9 @@ export const am: TranslationSchema = {
       noModelVersion: (hop) => `የ${hop} ሞዴል አንድም ስሪት አልተጫነም`
     },
     tabPc: 'Кастомний API перекладач',
-    descriptionPc: 'Переклад на твоєму ПК (Opus-MT або MADLAD-400) через UI offline support. Телефон і ПК мають бути в одній Wi-Fi.'
+    descriptionPc: 'Переклад на твоєму ПК (Opus-MT або MADLAD-400) через UI offline support. Телефон і ПК мають бути в одній Wi-Fi.',
+    withContextLabel: 'ከአውድ ጋር መተርጎም',
+    withContextHint: 'ቃል ከዓረፍተ ነገሩ ጋር፣ ዓረፍተ ነገር ደግሞ ከአጎራባቾቹ ጋር ይተረጎማል። ትርጉሙ ይበልጥ ትክክለኛ ቢሆንም ቀርፋፋ ነው።'
   },
   timeOffsetPopup: {
     title: '⏱ ማካካሻ፣ ሴ',
@@ -1543,6 +1548,8 @@ export const am: TranslationSchema = {
       sentenceFailed: 'Не вдалось перекласти речення',
       skipped: (failed, error) => `Пропущено речень: ${failed}. ${error}`,
       bookFailed: 'Не вдалось перекласти книгу',
+      engineSwitched: (failed, from, to, next) => `${failed} ሞተር ${from}→${to} መተርጎም አይችልም። ወደ ${next} ተቀይሯል።`,
+      subtitlesFailed: 'የትርጉም ጽሑፎቹን መተርጎም አልተቻለም'
     },
     tokens: {
       parseFailed: 'Не вдалось розібрати текст книги',

@@ -549,7 +549,10 @@ export const jv: TranslationSchema = {
     noSubtitlesFound: 'Ora ana subtitle kanggo basa iki',
     noSubtitlesForVideo: (originalLang, translationLang) => `Ora ana subtitle kanggo video iki (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Ora ana transkrip dhasar kanggo terjemahan menyang "${translationLang}"`,
-    loadSubtitlesFailed: 'Subtitle gagal dimuat'
+    loadSubtitlesFailed: 'Subtitle gagal dimuat',
+    offlineTranslateA11y: 'Terjemahan subtitel',
+    offlineTranslateClear: 'Kabèh terjemahan subtitel video iki bakal dibusak saka basis data, kanggo kabèh mesin. Tumindak iki ora bisa dibatalake.',
+    offlineTranslateNote: 'Sauntara nguripake penerjemah offline nganti terjemahan otomatis kasedhiya.'
   },
   swipeUndo: {
     noLanguageSelected: 'Ora ana basa sing dipilih',
@@ -1302,7 +1305,9 @@ export const jv: TranslationSchema = {
       noModelVersion: (hop) => `Ora ana versi model ${hop} sing kasil dimuat`
     },
     tabPc: 'Penerjemah API kustom',
-    descriptionPc: 'Terjemahan ing PC sampeyan (Opus-MT utawa MADLAD-400) liwat UI offline support. Telpon lan PC kudu ing Wi-Fi sing padha.'
+    descriptionPc: 'Terjemahan ing PC sampeyan (Opus-MT utawa MADLAD-400) liwat UI offline support. Telpon lan PC kudu ing Wi-Fi sing padha.',
+    withContextLabel: 'Terjemahake nganggo konteks',
+    withContextHint: 'Tembung diterjemahake bareng ukarane, ukara bareng ukara ing sacedhake. Terjemahan luwih akurat, nanging luwih alon.'
   },
   timeOffsetPopup: {
     title: '⏱ Offset, s',
@@ -1587,6 +1592,8 @@ export const jv: TranslationSchema = {
       sentenceFailed: 'Gagal nerjemahake ukara',
       skipped: (failed, error) => `Ukara sing dilewati: ${failed}. ${error}`,
       bookFailed: 'Gagal nerjemahake buku',
+      engineSwitched: (failed, from, to, next) => `Mesin ${failed} ora bisa nerjemahake ${from}→${to}. Dialihake menyang ${next}.`,
+      subtitlesFailed: 'Subtitel ora bisa diterjemahake'
     },
     tokens: {
       parseFailed: 'Gagal nganalisis teks buku',

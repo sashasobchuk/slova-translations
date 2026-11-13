@@ -554,7 +554,10 @@ export const ru: TranslationSchema = {
     noSubtitlesFound: 'Субтитры для этого языка не найдены',
     noSubtitlesForVideo: (originalLang, translationLang) => `Не найдено субтитров для этого видео (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Базовый транскрипт для перевода на "${translationLang}" не найден`,
-    loadSubtitlesFailed: 'Не удалось загрузить субтитры'
+    loadSubtitlesFailed: 'Не удалось загрузить субтитры',
+    offlineTranslateA11y: 'Перевод субтитров',
+    offlineTranslateClear: 'Все переводы субтитров этого видео будут удалены из базы, для всех движков. Это действие нельзя отменить.',
+    offlineTranslateNote: 'Временно включаю офлайн-переводчик, пока нет автоматического перевода.'
   },
   swipeUndo: {
     noLanguageSelected: 'Язык не выбран',
@@ -1308,7 +1311,9 @@ export const ru: TranslationSchema = {
       noModelVersion: (hop) => `Ни одна версия модели ${hop} не загрузилась`
     },
     tabPc: 'Кастомный API переводчик',
-    descriptionPc: 'Перевод на вашем ПК через offline support (Opus-MT или MADLAD-400). Телефон и ПК в одной сети Wi-Fi.'
+    descriptionPc: 'Перевод на вашем ПК через offline support (Opus-MT или MADLAD-400). Телефон и ПК в одной сети Wi-Fi.',
+    withContextLabel: 'Переводить с контекстом',
+    withContextHint: 'Слово переводится вместе с предложением, предложение — вместе с соседними. Перевод точнее, но медленнее.'
   },
   timeOffsetPopup: {
     title: '⏱ Смещение, с',
@@ -1593,6 +1598,8 @@ export const ru: TranslationSchema = {
       sentenceFailed: 'Не удалось перевести предложение',
       skipped: (failed, error) => `Пропущено предложений: ${failed}. ${error}`,
       bookFailed: 'Не удалось перевести книгу',
+      engineSwitched: (failed, from, to, next) => `Движок ${failed} не переводит ${from}→${to}. Переключено на ${next}.`,
+      subtitlesFailed: 'Не удалось перевести субтитры'
     },
     tokens: {
       parseFailed: 'Не удалось разобрать текст книги',

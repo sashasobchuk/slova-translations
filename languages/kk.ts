@@ -548,7 +548,10 @@ export const kk: TranslationSchema = {
     noSubtitlesFound: 'Бұл тіл үшін субтитрлер табылмады',
     noSubtitlesForVideo: (originalLang, translationLang) => `Бұл видео үшін субтитрлер табылмады (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}" тіліне аударуға арналған негізгі транскрипт табылмады`,
-    loadSubtitlesFailed: 'Субтитрлерді жүктеу мүмкін болмады'
+    loadSubtitlesFailed: 'Субтитрлерді жүктеу мүмкін болмады',
+    offlineTranslateA11y: 'Субтитр аудармасы',
+    offlineTranslateClear: 'Осы бейненің барлық субтитр аудармалары барлық қозғалтқыштар үшін дерекқордан жойылады. Бұл әрекетті болдырмау мүмкін емес.',
+    offlineTranslateNote: 'Автоматты аударма пайда болғанша офлайн аудармашыны уақытша қосамын.'
   },
   swipeUndo: {
     noLanguageSelected: 'Тіл таңдалмаған',
@@ -1301,7 +1304,9 @@ export const kk: TranslationSchema = {
       noModelVersion: (hop) => `${hop} моделінің ешбір нұсқасы жүктелмеді`
     },
     tabPc: 'Арнайы API аудармашы',
-    descriptionPc: 'UI offline support арқылы ДК-дегі аударма (Opus-MT немесе MADLAD-400). Телефон мен ДК бір Wi-Fi желісінде болуы тиіс.'
+    descriptionPc: 'UI offline support арқылы ДК-дегі аударма (Opus-MT немесе MADLAD-400). Телефон мен ДК бір Wi-Fi желісінде болуы тиіс.',
+    withContextLabel: 'Мәтінмәнмен аудару',
+    withContextHint: 'Сөз сөйлеммен бірге, сөйлем көршілес сөйлемдермен бірге аударылады. Аударма дәлірек, бірақ баяуырақ.'
   },
   timeOffsetPopup: {
     title: '⏱ Ығысу, с',
@@ -1586,6 +1591,8 @@ export const kk: TranslationSchema = {
       sentenceFailed: 'Сөйлемді аудару мүмкін болмады',
       skipped: (failed, error) => `Өткізіліп жіберілген сөйлемдер: ${failed}. ${error}`,
       bookFailed: 'Кітапты аудару мүмкін болмады',
+      engineSwitched: (failed, from, to, next) => `${failed} қозғалтқышы ${from}→${to} аудармайды. ${next} қозғалтқышына ауыстырылды.`,
+      subtitlesFailed: 'Субтитрлерді аудару мүмкін болмады'
     },
     tokens: {
       parseFailed: 'Кітап мәтінін талдау мүмкін болмады',

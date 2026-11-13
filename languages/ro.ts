@@ -549,7 +549,10 @@ export const ro: TranslationSchema = {
     noSubtitlesFound: 'Nu s-au găsit subtitrări pentru această limbă',
     noSubtitlesForVideo: (originalLang, translationLang) => `Nu s-au găsit subtitrări pentru acest videoclip (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Transcrierea de bază pentru traducerea în "${translationLang}" nu a fost găsită`,
-    loadSubtitlesFailed: 'Nu s-au putut încărca subtitrările'
+    loadSubtitlesFailed: 'Nu s-au putut încărca subtitrările',
+    offlineTranslateA11y: 'Traducerea subtitrărilor',
+    offlineTranslateClear: 'Toate traducerile subtitrărilor acestui videoclip vor fi șterse din baza de date, pentru toate motoarele. Această acțiune nu poate fi anulată.',
+    offlineTranslateNote: 'Pornesc temporar traducătorul offline până când va fi disponibilă traducerea automată.'
   },
   swipeUndo: {
     noLanguageSelected: 'Nicio limbă selectată',
@@ -1302,7 +1305,9 @@ export const ro: TranslationSchema = {
       noModelVersion: (hop) => `Nicio versiune a modelului ${hop} nu s-a încărcat`
     },
     tabPc: 'Traducător API propriu',
-    descriptionPc: 'Traducere pe PC-ul tău prin UI offline support (Opus-MT sau MADLAD-400). Telefonul și PC-ul trebuie să fie în același Wi-Fi.'
+    descriptionPc: 'Traducere pe PC-ul tău prin UI offline support (Opus-MT sau MADLAD-400). Telefonul și PC-ul trebuie să fie în același Wi-Fi.',
+    withContextLabel: 'Tradu cu context',
+    withContextHint: 'Cuvântul se traduce împreună cu propoziția, iar propoziția împreună cu cele vecine. Traducerea e mai precisă, dar mai lentă.'
   },
   timeOffsetPopup: {
     title: '⏱ Decalaj, s',
@@ -1587,6 +1592,8 @@ export const ro: TranslationSchema = {
       sentenceFailed: 'Traducerea propoziției a eșuat',
       skipped: (failed, error) => `Propoziții ratate: ${failed}. ${error}`,
       bookFailed: 'Traducerea cărții a eșuat',
+      engineSwitched: (failed, from, to, next) => `Motorul ${failed} nu traduce ${from}→${to}. S-a comutat pe ${next}.`,
+      subtitlesFailed: 'Subtitrările nu au putut fi traduse'
     },
     tokens: {
       parseFailed: 'Analiza textului cărții a eșuat',

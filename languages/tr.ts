@@ -558,7 +558,10 @@ export const tr: TranslationSchema = {
     noSubtitlesFound: 'Bu dil için altyazı bulunamadı',
     noSubtitlesForVideo: (originalLang, translationLang) => `Bu video için altyazı bulunamadı (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `"${translationLang}" diline çeviri için temel transkript bulunamadı`,
-    loadSubtitlesFailed: 'Altyazılar yüklenemedi'
+    loadSubtitlesFailed: 'Altyazılar yüklenemedi',
+    offlineTranslateA11y: 'Altyazı çevirisi',
+    offlineTranslateClear: 'Bu videonun tüm altyazı çevirileri, tüm motorlar için veritabanından silinecek. Bu işlem geri alınamaz.',
+    offlineTranslateNote: 'Otomatik çeviri gelene kadar çevrimdışı çevirmen geçici olarak açılıyor.'
   },
   swipeUndo: {
     noLanguageSelected: 'Dil seçilmedi',
@@ -1312,7 +1315,9 @@ export const tr: TranslationSchema = {
       noModelVersion: (hop) => `${hop} modelinin hiçbir sürümü yüklenmedi`
     },
     tabPc: 'Özel API çevirmeni',
-    descriptionPc: 'UI offline support üzerinden bilgisayarınızda çeviri (Opus-MT veya MADLAD-400). Telefon ve PC aynı Wi-Fi ağında olmalıdır.'
+    descriptionPc: 'UI offline support üzerinden bilgisayarınızda çeviri (Opus-MT veya MADLAD-400). Telefon ve PC aynı Wi-Fi ağında olmalıdır.',
+    withContextLabel: 'Bağlamla çevir',
+    withContextHint: 'Kelime cümlesiyle, cümle de komşu cümlelerle birlikte çevrilir. Çeviri daha doğru ama daha yavaştır.'
   },
   timeOffsetPopup: {
     title: '⏱ Zaman Kayması, sn',
@@ -1597,6 +1602,8 @@ export const tr: TranslationSchema = {
       sentenceFailed: 'Cümle çevrilemedi',
       skipped: (failed, error) => `Atlanan cümle: ${failed}. ${error}`,
       bookFailed: 'Kitap çevrilemedi',
+      engineSwitched: (failed, from, to, next) => `${failed} motoru ${from}→${to} çevirisi yapamıyor. ${next} motoruna geçildi.`,
+      subtitlesFailed: 'Altyazılar çevrilemedi'
     },
     tokens: {
       parseFailed: 'Kitap metni ayrıştırılamadı',

@@ -554,7 +554,10 @@ export const sw: TranslationSchema = {
     noSubtitlesFound: 'Hakuna manukuu yaliyopatikana kwa lugha hii',
     noSubtitlesForVideo: (originalLang, translationLang) => `Hakuna manukuu yaliyopatikana kwa video hii (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Hati msingi ya kutafsiri kwenda "${translationLang}" haijapatikana`,
-    loadSubtitlesFailed: 'Imeshindwa kupakia manukuu'
+    loadSubtitlesFailed: 'Imeshindwa kupakia manukuu',
+    offlineTranslateA11y: 'Tafsiri ya manukuu',
+    offlineTranslateClear: 'Tafsiri zote za manukuu ya video hii zitafutwa kwenye hifadhidata, kwa injini zote. Kitendo hiki hakiwezi kutenduliwa.',
+    offlineTranslateNote: 'Ninawasha kwa muda kitafsiri cha nje ya mtandao hadi tafsiri ya kiotomatiki ipatikane.'
   },
   swipeUndo: {
     noLanguageSelected: 'Hakuna lugha iliyochaguliwa',
@@ -1307,7 +1310,9 @@ export const sw: TranslationSchema = {
       noModelVersion: (hop) => `Hakuna toleo la muundo wa ${hop} lililopakiwa`
     },
     tabPc: 'Mtafsiri maalum wa API',
-    descriptionPc: 'Tafsiri kwenye PC yako kupitia msaada wa nje ya mtandao (Opus-MT au MADLAD-400). Simu na PC ziko kwenye mtandao mmoja wa Wi-Fi.'
+    descriptionPc: 'Tafsiri kwenye PC yako kupitia msaada wa nje ya mtandao (Opus-MT au MADLAD-400). Simu na PC ziko kwenye mtandao mmoja wa Wi-Fi.',
+    withContextLabel: 'Tafsiri pamoja na muktadha',
+    withContextHint: 'Neno hutafsiriwa pamoja na sentensi yake, na sentensi pamoja na zile jirani. Tafsiri ni sahihi zaidi, lakini ni polepole zaidi.'
   },
   timeOffsetPopup: {
     title: '⏱ Fidia, s',
@@ -1592,6 +1597,8 @@ export const sw: TranslationSchema = {
       sentenceFailed: 'Imeshindwa kutafsiri sentensi',
       skipped: (failed, error) => `Sentensi zilizorukwa: ${failed}. ${error}`,
       bookFailed: 'Imeshindwa kutafsiri kitabu',
+      engineSwitched: (failed, from, to, next) => `Injini ya ${failed} haitafsiri ${from}→${to}. Imebadilishwa kuwa ${next}.`,
+      subtitlesFailed: 'Imeshindwa kutafsiri manukuu'
     },
     tokens: {
       parseFailed: 'Imeshindwa kuchambua maandishi ya kitabu',

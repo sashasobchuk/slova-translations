@@ -557,7 +557,10 @@ export const zhHant: TranslationSchema = {
     noSubtitlesFound: '未找到該語言的字幕',
     noSubtitlesForVideo: (originalLang, translationLang) => `未找到此影片的字幕 (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `未找到翻譯成「${translationLang}」的基礎文本`,
-    loadSubtitlesFailed: '字幕載入失敗'
+    loadSubtitlesFailed: '字幕載入失敗',
+    offlineTranslateA11y: '字幕翻譯',
+    offlineTranslateClear: '此影片的所有字幕翻譯（所有引擎）都將從資料庫中刪除。此操作無法復原。',
+    offlineTranslateNote: '在自動翻譯可用之前，暫時啟用離線翻譯器。'
   },
   swipeUndo: {
     noLanguageSelected: '未選擇語言',
@@ -1311,7 +1314,9 @@ export const zhHant: TranslationSchema = {
       noModelVersion: (hop) => `模型 ${hop} 的任何版本都未能載入`
     },
     tabPc: '自定義 API 翻譯器',
-    descriptionPc: '在您的電腦上翻譯（Opus-MT 或 MADLAD-400），透過 UI offline support。手機和電腦需連線同一 Wi-Fi。'
+    descriptionPc: '在您的電腦上翻譯（Opus-MT 或 MADLAD-400），透過 UI offline support。手機和電腦需連線同一 Wi-Fi。',
+    withContextLabel: '結合上下文翻譯',
+    withContextHint: '單字會連同所在句子一起翻譯，句子會連同前後句子一起翻譯。翻譯更準確，但更慢。'
   },
   timeOffsetPopup: {
     title: '⏱ 偏移量，秒',
@@ -1596,6 +1601,8 @@ export const zhHant: TranslationSchema = {
       sentenceFailed: '無法翻譯句子',
       skipped: (failed, error) => `已跳過句子：${failed}。${error}`,
       bookFailed: '無法翻譯書籍',
+      engineSwitched: (failed, from, to, next) => `${failed} 引擎無法翻譯 ${from}→${to}。已切換到 ${next}。`,
+      subtitlesFailed: '無法翻譯字幕'
     },
     tokens: {
       parseFailed: '無法解析書籍文字',

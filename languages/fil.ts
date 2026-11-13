@@ -558,7 +558,10 @@ export const fil: TranslationSchema = {
     noSubtitlesFound: 'Walang nahanap na mga subtitle para sa wikang ito',
     noSubtitlesForVideo: (originalLang, translationLang) => `Walang nahanap na mga subtitle para sa video na ito (original=${originalLang}, translation=${translationLang})`,
     baseTranscriptNotFound: (translationLang) => `Hindi nahanap ang batayang transcript para sa pagsasalin sa "${translationLang}"`,
-    loadSubtitlesFailed: 'Hindi na-load ang mga subtitle'
+    loadSubtitlesFailed: 'Hindi na-load ang mga subtitle',
+    offlineTranslateA11y: 'Pagsasalin ng subtitle',
+    offlineTranslateClear: 'Mabubura sa database ang lahat ng salin ng subtitle ng video na ito, para sa lahat ng engine. Hindi na ito maaaring bawiin.',
+    offlineTranslateNote: 'Pansamantalang binubuksan ang offline na tagasalin habang wala pang awtomatikong salin.'
   },
   swipeUndo: {
     noLanguageSelected: 'Walang napiling wika',
@@ -1312,7 +1315,9 @@ export const fil: TranslationSchema = {
       noModelVersion: (hop) => `Walang bersyon ng modelong ${hop} ang na-load`
     },
     tabPc: 'Custom Translator API',
-    descriptionPc: 'Translation on your PC (Opus-MT or MADLAD-400) via offline support UI. Phone and PC on same Wi-Fi.'
+    descriptionPc: 'Translation on your PC (Opus-MT or MADLAD-400) via offline support UI. Phone and PC on same Wi-Fi.',
+    withContextLabel: 'Isalin nang may konteksto',
+    withContextHint: 'Isinasalin ang salita kasama ang pangungusap nito, at ang pangungusap kasama ang mga katabi nito. Mas tumpak ang salin, pero mas mabagal.'
   },
   timeOffsetPopup: {
     title: '⏱ Offset, s',
@@ -1597,6 +1602,8 @@ export const fil: TranslationSchema = {
       sentenceFailed: 'Nabigong isalin ang sentence',
       skipped: (failed, error) => `Skipped sentences: ${failed}. ${error}`,
       bookFailed: 'Nabigong isalin ang libro',
+      engineSwitched: (failed, from, to, next) => `Hindi kayang isalin ng engine na ${failed} ang ${from}→${to}. Inilipat sa ${next}.`,
+      subtitlesFailed: 'Hindi maisalin ang mga subtitle'
     },
     tokens: {
       parseFailed: 'Nabigong i-parse ang teksto ng libro',
