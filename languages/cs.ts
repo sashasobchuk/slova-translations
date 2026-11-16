@@ -2960,5 +2960,21 @@ export const cs: TranslationSchema = {
     noRulesArray: 'Chybí pole rules',
     newerVersion: (version, current) => `Verze formátu ${version} je novější než ${current}`,
     noRules: 'Sada neobsahuje pravidla s názvem',
+  },
+  analytics: {
+    consent: {
+      title: 'Pomozte vylepšit Slova',
+      body: 'Sbíráme anonymní statistiky: které obrazovky se otevírají, kde vznikají chyby, jaké jazyky jsou vybrané. Texty slov, videa ani osobní údaje se nesbírají a reklama se nepoužívá. Souhlas můžete později změnit.',
+      accept: 'Povolit',
+      acceptA11y: 'Povolit analytiku',
+      decline: 'Teď ne',
+      declineA11y: 'Nepovolit analytiku',
+    },
+    settings: {
+      title: 'Anonymní analytika',
+      body: 'Pokud jste to povolili, aplikace odesílá do Google Firebase anonymní statistiky: zemi, jazyky, obrazovky, které otevíráte, čas na nich strávený a chyby nebo pády. Texty slov a vět, videa ani osobní údaje se neodesílají. Vypněte přepínač níže a odesílání se zastaví. Již odeslaná data zůstávají u Googlu.',
+      toggle: 'Odesílat anonymní statistiky',
+      toggleA11y: 'Odesílat anonymní statistiky',
+    },
   }
 }

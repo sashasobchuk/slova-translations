@@ -2964,5 +2964,21 @@ export const zhHans: TranslationSchema = {
     noRulesArray: '没有 rules 数组',
     newerVersion: (version, current) => `格式版本 ${version} 高于 ${current}`,
     noRules: '该包中没有带名称的规则',
+  },
+  analytics: {
+    consent: {
+      title: '帮助改进 Slova',
+      body: '我们收集匿名统计数据：打开了哪些页面、哪里出现错误、选择了哪些语言。不会收集单词文本、视频和个人数据，也不使用广告。您之后可以更改同意设置。',
+      accept: '允许',
+      acceptA11y: '允许分析',
+      decline: '暂不',
+      declineA11y: '不允许分析',
+    },
+    settings: {
+      title: '匿名分析',
+      body: '如果您已允许，应用会向 Google Firebase 发送匿名统计数据：国家、语言、您打开的页面、在页面上停留的时间以及错误或崩溃。不会发送单词和句子的文本、视频和个人数据。关闭下方开关即可停止发送。已发送的数据会保留在 Google。',
+      toggle: '发送匿名统计数据',
+      toggleA11y: '发送匿名统计数据',
+    },
   }
 }

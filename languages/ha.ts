@@ -2961,5 +2961,21 @@ export const ha: TranslationSchema = {
     noRulesArray: 'Babu jerin rules',
     newerVersion: (version, current) => `Sigar tsari ${version} ta fi ${current} sabuwa`,
     noRules: 'A fakitin babu dokoki masu suna',
+  },
+  analytics: {
+    consent: {
+      title: 'Taimaka mana inganta Slova',
+      body: 'Muna tattara ƙididdiga marasa suna: waɗanne allo ake buɗewa, inda kurakurai ke faruwa, da waɗanne harsuna aka zaɓa. Ba a tattara rubutun kalmomi, bidiyo da bayanan sirri ba, kuma ba a amfani da talla. Za ka iya canza izininka daga baya.',
+      accept: 'Ba da izini',
+      acceptA11y: 'Ba da izinin nazari',
+      decline: 'Ba yanzu ba',
+      declineA11y: 'Kada ka ba da izinin nazari',
+    },
+    settings: {
+      title: 'Nazari maras suna',
+      body: 'Idan ka ba da izini, manhajar tana aika ƙididdiga marasa suna zuwa Google Firebase: ƙasa, harsuna, allon da ka buɗe, lokacin da ka yi a kansu, da kurakurai ko faɗuwar manhaja. Ba a aika rubutun kalmomi da jimloli, bidiyo da bayanan sirri ba. Kashe maɓallin da ke ƙasa kuma aikawa zai tsaya. Abin da aka riga aka aika yana nan a Google.',
+      toggle: 'Aika ƙididdiga marasa suna',
+      toggleA11y: 'Aika ƙididdiga marasa suna',
+    },
   }
 }

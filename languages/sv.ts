@@ -2960,5 +2960,21 @@ export const sv: TranslationSchema = {
     noRulesArray: 'Ingen rules array',
     newerVersion: (version, current) => `Formatversion ${version} nyare än ${current}`,
     noRules: 'Inga regler med namn i paket',
+  },
+  analytics: {
+    consent: {
+      title: 'Hjälp oss förbättra Slova',
+      body: 'Vi samlar in anonym statistik: vilka skärmar som öppnas, var fel uppstår och vilka språk som är valda. Texter från ord, videor och personuppgifter samlas inte in, och ingen reklam används. Du kan ändra ditt samtycke senare.',
+      accept: 'Tillåt',
+      acceptA11y: 'Tillåt analys',
+      decline: 'Inte nu',
+      declineA11y: 'Tillåt inte analys',
+    },
+    settings: {
+      title: 'Anonym analys',
+      body: 'Om du har tillåtit det skickar appen anonym statistik till Google Firebase: land, språk, skärmarna du öppnar, tiden du lägger på dem samt fel eller krascher. Texter från ord och meningar, videor och personuppgifter skickas inte. Stäng av reglaget nedan så upphör skickandet. Data som redan skickats ligger kvar hos Google.',
+      toggle: 'Skicka anonym statistik',
+      toggleA11y: 'Skicka anonym statistik',
+    },
   }
 }

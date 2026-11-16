@@ -2955,5 +2955,21 @@ export const ko: TranslationSchema = {
     noRulesArray: 'rules 배열이 없습니다',
     newerVersion: (version, current) => `포맷 버전 ${version}이(가) ${current}보다 최신입니다`,
     noRules: '팩에 이름이 있는 규칙이 없습니다',
+  },
+  analytics: {
+    consent: {
+      title: 'Slova 개선에 도움을 주세요',
+      body: '익명 통계를 수집합니다. 어떤 화면이 열리는지, 어디서 오류가 발생하는지, 어떤 언어가 선택되었는지입니다. 단어 텍스트, 동영상, 개인 정보는 수집하지 않으며 광고도 사용하지 않습니다. 동의는 나중에 변경할 수 있습니다.',
+      accept: '허용',
+      acceptA11y: '분석 허용',
+      decline: '나중에',
+      declineA11y: '분석 허용 안 함',
+    },
+    settings: {
+      title: '익명 분석',
+      body: '허용하신 경우 앱은 Google Firebase로 익명 통계를 보냅니다. 국가, 언어, 여는 화면, 화면별 사용 시간, 오류 또는 충돌입니다. 단어와 문장 텍스트, 동영상, 개인 정보는 전송되지 않습니다. 아래 스위치를 끄면 전송이 중단됩니다. 이미 전송된 데이터는 Google에 남아 있습니다.',
+      toggle: '익명 통계 보내기',
+      toggleA11y: '익명 통계 보내기',
+    },
   }
 }

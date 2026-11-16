@@ -2960,5 +2960,21 @@ export const yo: TranslationSchema = {
     noRulesArray: 'Kò sí àkójọ rules',
     newerVersion: (version, current) => `Ìrísí fèsè ${version} tuntun jù ${current}`,
     noRules: 'Àpò kò ní ìlànà tí ó ní orúkọ',
+  },
+  analytics: {
+    consent: {
+      title: 'Ràn wá lọ́wọ́ láti mú Slova dára sí i',
+      body: 'À ń kó àwọn ìṣirò àìlórúkọ jọ: àwọn ojú-ìwé tí a ṣí, ibi tí àṣìṣe ti ń ṣẹlẹ̀, àti àwọn èdè tí a yàn. A kì í kó ọ̀rọ̀ inú àwọn ọ̀rọ̀, fídíò àti dátà ara-ẹni jọ, a kì í sì lo ìpolówó. O lè yí ìfọwọ́sí rẹ padà lẹ́yìn náà.',
+      accept: 'Gbà láàyè',
+      acceptA11y: 'Gba ìtúpalẹ̀ láàyè',
+      decline: 'Kì í ṣe báyìí',
+      declineA11y: 'Má ṣe gba ìtúpalẹ̀ láàyè',
+    },
+    settings: {
+      title: 'Ìtúpalẹ̀ àìlórúkọ',
+      body: 'Tí o bá gbà láàyè, ohun-èlò náà ń fi àwọn ìṣirò àìlórúkọ ránṣẹ́ sí Google Firebase: orílẹ̀-èdè, àwọn èdè, àwọn ojú-ìwé tí o ṣí, àkókò tí o lò lórí wọn, àti àṣìṣe tàbí ìkọlù. A kì í fi ọ̀rọ̀ inú àwọn ọ̀rọ̀ àti gbólóhùn, fídíò àti dátà ara-ẹni ránṣẹ́. Pa ìyípadà tí ó wà nísàlẹ̀, fífiranṣẹ́ yóò sì dúró. Ohun tí a ti fi ránṣẹ́ ṣáájú wà ní Google.',
+      toggle: 'Fi ìṣirò àìlórúkọ ránṣẹ́',
+      toggleA11y: 'Fi ìṣirò àìlórúkọ ránṣẹ́',
+    },
   }
 }

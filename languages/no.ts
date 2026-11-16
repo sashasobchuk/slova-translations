@@ -2959,5 +2959,21 @@ export const no: TranslationSchema = {
     noRulesArray: 'Mangler "rules"-array',
     newerVersion: (version, current) => `Formatversjon ${version} er nyere enn ${current}`,
     noRules: 'Pakken inneholder ingen regler med tittel',
+  },
+  analytics: {
+    consent: {
+      title: 'Hjelp oss med å forbedre Slova',
+      body: 'Vi samler inn anonym statistikk: hvilke skjermer som åpnes, hvor feil oppstår og hvilke språk som er valgt. Tekster fra ord, videoer og personopplysninger samles ikke inn, og det brukes ingen reklame. Du kan endre samtykket senere.',
+      accept: 'Tillat',
+      acceptA11y: 'Tillat analyse',
+      decline: 'Ikke nå',
+      declineA11y: 'Ikke tillat analyse',
+    },
+    settings: {
+      title: 'Anonym analyse',
+      body: 'Hvis du har tillatt det, sender appen anonym statistikk til Google Firebase: land, språk, skjermene du åpner, tiden du bruker på dem og feil eller krasj. Tekster fra ord og setninger, videoer og personopplysninger sendes ikke. Slå av bryteren nedenfor, så stopper sendingen. Data som allerede er sendt, blir værende hos Google.',
+      toggle: 'Send anonym statistikk',
+      toggleA11y: 'Send anonym statistikk',
+    },
   }
 }

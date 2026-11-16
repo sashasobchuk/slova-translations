@@ -2969,5 +2969,21 @@ export const fil: TranslationSchema = {
     noRulesArray: 'No rules array',
     newerVersion: (version, current) => `Format version ${version} newer than ${current}`,
     noRules: 'No titled rules in pack',
+  },
+  analytics: {
+    consent: {
+      title: 'Tulungan kaming pagbutihin ang Slova',
+      body: 'Nangongolekta kami ng hindi nakikilalang istatistika: aling mga screen ang binubuksan, saan nagkakaroon ng error, at aling mga wika ang pinili. Hindi kinokolekta ang teksto ng mga salita, mga video, at personal na datos, at walang ginagamit na ad. Maaari mong baguhin ang pahintulot mo sa ibang pagkakataon.',
+      accept: 'Payagan',
+      acceptA11y: 'Payagan ang analytics',
+      decline: 'Huwag muna',
+      declineA11y: 'Huwag payagan ang analytics',
+    },
+    settings: {
+      title: 'Anonymous na analytics',
+      body: 'Kung pinayagan mo, nagpapadala ang app ng anonymous na istatistika sa Google Firebase: bansa, mga wika, mga screen na binubuksan mo, oras na ginugol sa mga ito, at mga error o pag-crash. Hindi ipinapadala ang teksto ng mga salita at pangungusap, mga video, at personal na datos. I-off ang switch sa ibaba at titigil ang pagpapadala. Ang naipadala na ay nananatili sa Google.',
+      toggle: 'Magpadala ng anonymous na istatistika',
+      toggleA11y: 'Magpadala ng anonymous na istatistika',
+    },
   }
 }

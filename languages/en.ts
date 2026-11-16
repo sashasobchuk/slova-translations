@@ -2972,5 +2972,21 @@ export const en: TranslationSchema = {
     noRulesArray: 'No rules array',
     newerVersion: (version, current) => `The format version ${version} is newer than ${current}`,
     noRules: 'The pack has no rules with a name',
+  },
+  analytics: {
+    consent: {
+      title: 'Help improve Slova',
+      body: 'We collect anonymous statistics: which screens are opened, where errors occur, which languages are chosen. Texts of words, videos and personal data are not collected, and no advertising is used. You can change your consent later.',
+      accept: 'Allow',
+      acceptA11y: 'Allow analytics',
+      decline: 'Not now',
+      declineA11y: 'Do not allow analytics',
+    },
+    settings: {
+      title: 'Anonymous analytics',
+      body: 'If you allowed it, the app sends anonymous statistics to Google Firebase: country, languages, the screens you open, time spent on them, and errors or crashes. Texts of words and sentences, videos and personal data are not sent. Turn off the switch below and sending will stop. Data already sent stays at Google.',
+      toggle: 'Send anonymous statistics',
+      toggleA11y: 'Send anonymous statistics',
+    },
   }
 }

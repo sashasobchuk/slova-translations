@@ -2969,5 +2969,21 @@ export const tr: TranslationSchema = {
     noRulesArray: 'rules dizisi yok',
     newerVersion: (version, current) => `Biçim sürümü ${version}, mevcut ${current} sürümünden daha yeni`,
     noRules: 'Pakette adı olan kural yok',
+  },
+  analytics: {
+    consent: {
+      title: 'Slova\'yı geliştirmemize yardım edin',
+      body: 'Anonim istatistikler topluyoruz: hangi ekranların açıldığı, hataların nerede oluştuğu ve hangi dillerin seçildiği. Kelime metinleri, videolar ve kişisel veriler toplanmaz, reklam kullanılmaz. Onayınızı daha sonra değiştirebilirsiniz.',
+      accept: 'İzin ver',
+      acceptA11y: 'Analize izin ver',
+      decline: 'Şimdi değil',
+      declineA11y: 'Analize izin verme',
+    },
+    settings: {
+      title: 'Anonim analiz',
+      body: 'İzin verdiyseniz uygulama Google Firebase\'e anonim istatistikler gönderir: ülke, diller, açtığınız ekranlar, bu ekranlarda geçirilen süre ve hatalar ya da çökmeler. Kelime ve cümle metinleri, videolar ve kişisel veriler gönderilmez. Aşağıdaki anahtarı kapatın, gönderim durur. Önceden gönderilenler Google\'da kalır.',
+      toggle: 'Anonim istatistik gönder',
+      toggleA11y: 'Anonim istatistik gönder',
+    },
   }
 }

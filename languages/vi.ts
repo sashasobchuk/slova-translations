@@ -2965,5 +2965,21 @@ export const vi: TranslationSchema = {
     noRulesArray: 'Không có mảng rules',
     newerVersion: (version, current) => `Phiên bản định dạng ${version} mới hơn ${current}`,
     noRules: 'Gói không có quy tắc nào có tên',
+  },
+  analytics: {
+    consent: {
+      title: 'Giúp cải thiện Slova',
+      body: 'Chúng tôi thu thập thống kê ẩn danh: màn hình nào được mở, lỗi xảy ra ở đâu và ngôn ngữ nào được chọn. Văn bản của từ, video và dữ liệu cá nhân không được thu thập, và không dùng quảng cáo. Bạn có thể thay đổi sự đồng ý sau.',
+      accept: 'Cho phép',
+      acceptA11y: 'Cho phép phân tích',
+      decline: 'Để sau',
+      declineA11y: 'Không cho phép phân tích',
+    },
+    settings: {
+      title: 'Phân tích ẩn danh',
+      body: 'Nếu bạn cho phép, ứng dụng gửi thống kê ẩn danh tới Google Firebase: quốc gia, ngôn ngữ, các màn hình bạn mở, thời gian dùng trên đó và lỗi hoặc sự cố. Văn bản của từ và câu, video và dữ liệu cá nhân không được gửi. Tắt công tắc bên dưới, việc gửi sẽ dừng. Dữ liệu đã gửi vẫn nằm ở Google.',
+      toggle: 'Gửi thống kê ẩn danh',
+      toggleA11y: 'Gửi thống kê ẩn danh',
+    },
   }
 }

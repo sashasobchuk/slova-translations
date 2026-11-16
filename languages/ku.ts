@@ -2956,5 +2956,21 @@ export const ku: TranslationSchema = {
     noRulesArray: 'Rêza rules tune ye',
     newerVersion: (version, current) => `Guhertoya formatê ${version} ji ${current} nûtir e`,
     noRules: 'Di pakêtê de rêzikên bi nav tune ne',
+  },
+  analytics: {
+    consent: {
+      title: 'Alîkariya baştirkirina Slova bike',
+      body: 'Em statîstîkên bênav kom dikin: kîjan dîmender têne vekirin, çewtî li ku diqewimin û kîjan ziman hatine hilbijartin. Nivîsa peyvan, vîdyo û daneyên kesane nayên komkirin û reklam nayê bikaranîn. Tu dikarî razîbûna xwe paşê biguherînî.',
+      accept: 'Destûr bide',
+      acceptA11y: 'Destûrê bide analîtîkê',
+      decline: 'Niha na',
+      declineA11y: 'Destûrê nede analîtîkê',
+    },
+    settings: {
+      title: 'Analîtîka bênav',
+      body: 'Ger te destûr dabe, sepan statîstîkên bênav dişîne Google Firebase: welat, ziman, dîmenderên ku tu vedikî, dema li ser wan û çewtî an qelibîn. Nivîsa peyv û hevokan, vîdyo û daneyên kesane nayên şandin. Guhêzka li jêr bigire û şandin dê bisekine. Ya ku jixwe hatiye şandin li Google dimîne.',
+      toggle: 'Statîstîkên bênav bişîne',
+      toggleA11y: 'Statîstîkên bênav bişîne',
+    },
   }
 }

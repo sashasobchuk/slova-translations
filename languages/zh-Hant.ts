@@ -2968,5 +2968,21 @@ export const zhHant: TranslationSchema = {
     noRulesArray: '沒有 rules 陣列',
     newerVersion: (version, current) => `格式版本 ${version} 高於 ${current}`,
     noRules: '該包中沒有帶名稱的規則',
+  },
+  analytics: {
+    consent: {
+      title: '協助改進 Slova',
+      body: '我們收集匿名統計資料：開啟了哪些頁面、哪裡發生錯誤、選擇了哪些語言。不會收集單字文字、影片和個人資料，也不使用廣告。您之後可以變更同意設定。',
+      accept: '允許',
+      acceptA11y: '允許分析',
+      decline: '暫不',
+      declineA11y: '不允許分析',
+    },
+    settings: {
+      title: '匿名分析',
+      body: '如果您已允許，應用程式會向 Google Firebase 傳送匿名統計資料：國家、語言、您開啟的頁面、在頁面上停留的時間，以及錯誤或當機。不會傳送單字和句子的文字、影片和個人資料。關閉下方開關即可停止傳送。已傳送的資料會保留在 Google。',
+      toggle: '傳送匿名統計資料',
+      toggleA11y: '傳送匿名統計資料',
+    },
   }
 }

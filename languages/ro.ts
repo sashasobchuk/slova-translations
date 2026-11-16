@@ -2959,5 +2959,21 @@ export const ro: TranslationSchema = {
     noRulesArray: 'Nicio matrice rules',
     newerVersion: (version, current) => `Versiunea formatului ${version} este mai nouă decât ${current}`,
     noRules: 'Nicio regulă cu titluri în pachet',
+  },
+  analytics: {
+    consent: {
+      title: 'Ajutați-ne să îmbunătățim Slova',
+      body: 'Colectăm statistici anonime: ce ecrane sunt deschise, unde apar erori și ce limbi sunt alese. Textele cuvintelor, videoclipurile și datele personale nu sunt colectate, iar publicitatea nu este folosită. Vă puteți schimba acordul mai târziu.',
+      accept: 'Permite',
+      acceptA11y: 'Permite analiza',
+      decline: 'Nu acum',
+      declineA11y: 'Nu permite analiza',
+    },
+    settings: {
+      title: 'Analiză anonimă',
+      body: 'Dacă ați permis, aplicația trimite către Google Firebase statistici anonime: țara, limbile, ecranele pe care le deschideți, timpul petrecut pe ele și erorile sau blocările. Textele cuvintelor și ale propozițiilor, videoclipurile și datele personale nu sunt trimise. Dezactivați comutatorul de mai jos și trimiterea se oprește. Datele deja trimise rămân la Google.',
+      toggle: 'Trimite statistici anonime',
+      toggleA11y: 'Trimite statistici anonime',
+    },
   }
 }

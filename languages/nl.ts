@@ -2969,5 +2969,21 @@ export const nl: TranslationSchema = {
     noRulesArray: 'Geen rules array',
     newerVersion: (version, current) => `Formatversie ${version} nieuwer dan ${current}`,
     noRules: 'Geen regels met titel in pack',
+  },
+  analytics: {
+    consent: {
+      title: 'Help Slova te verbeteren',
+      body: 'We verzamelen anonieme statistieken: welke schermen worden geopend, waar fouten optreden en welke talen zijn gekozen. Teksten van woorden, video\'s en persoonlijke gegevens worden niet verzameld en er wordt geen reclame gebruikt. Je kunt je toestemming later wijzigen.',
+      accept: 'Toestaan',
+      acceptA11y: 'Analyse toestaan',
+      decline: 'Niet nu',
+      declineA11y: 'Analyse niet toestaan',
+    },
+    settings: {
+      title: 'Anonieme analyse',
+      body: 'Als je dit hebt toegestaan, stuurt de app anonieme statistieken naar Google Firebase: land, talen, de schermen die je opent, de tijd die je erop doorbrengt en fouten of crashes. Teksten van woorden en zinnen, video\'s en persoonlijke gegevens worden niet verzonden. Zet de schakelaar hieronder uit en het verzenden stopt. Al verzonden gegevens blijven bij Google.',
+      toggle: 'Anonieme statistieken verzenden',
+      toggleA11y: 'Anonieme statistieken verzenden',
+    },
   }
 }

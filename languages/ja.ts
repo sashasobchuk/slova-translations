@@ -2966,5 +2966,21 @@ export const ja: TranslationSchema = {
     noRulesArray: 'rules配列がありません',
     newerVersion: (version, current) => `フォーマットバージョン ${version} が ${current} より新しいです`,
     noRules: 'パックにタイトル付きルールがありません',
+  },
+  analytics: {
+    consent: {
+      title: 'Slova の改善にご協力ください',
+      body: '匿名の統計を収集します。開かれた画面、エラーが発生した場所、選択された言語などです。単語のテキスト、動画、個人データは収集せず、広告も使用しません。同意は後から変更できます。',
+      accept: '許可する',
+      acceptA11y: '分析を許可する',
+      decline: '今はしない',
+      declineA11y: '分析を許可しない',
+    },
+    settings: {
+      title: '匿名の分析',
+      body: '許可した場合、アプリは匿名の統計を Google Firebase に送信します。国、言語、開いた画面、その滞在時間、エラーやクラッシュです。単語や文のテキスト、動画、個人データは送信されません。下のスイッチをオフにすると送信が止まります。すでに送信されたデータは Google に残ります。',
+      toggle: '匿名の統計を送信する',
+      toggleA11y: '匿名の統計を送信する',
+    },
   }
 }

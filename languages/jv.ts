@@ -2959,5 +2959,21 @@ export const jv: TranslationSchema = {
     noRulesArray: 'Ora ana array rules',
     newerVersion: (version, current) => `Versi format ${version} luwih anyar tinimbang ${current}`,
     noRules: 'Ora ana aturan kanthi jeneng ing pack',
+  },
+  analytics: {
+    consent: {
+      title: 'Bantu nambahi apik Slova',
+      body: 'Kita ngumpulake statistik anonim: layar endi sing dibukak, ing ngendi kesalahan kedadean, lan basa apa sing dipilih. Teks tembung, video, lan data pribadi ora dikumpulake, lan ora nganggo iklan. Sampeyan bisa ngowahi idin mengko.',
+      accept: 'Ngidini',
+      acceptA11y: 'Ngidini analitik',
+      decline: 'Ora saiki',
+      declineA11y: 'Aja ngidini analitik',
+    },
+    settings: {
+      title: 'Analitik anonim',
+      body: 'Yen sampeyan wis ngidini, aplikasi ngirim statistik anonim menyang Google Firebase: negara, basa, layar sing sampeyan bukak, wektu ing layar kasebut, lan kesalahan utawa crash. Teks tembung lan ukara, video, lan data pribadi ora dikirim. Pateni saklar ing ngisor lan ngirim bakal mandheg. Data sing wis dikirim tetep ana ing Google.',
+      toggle: 'Kirim statistik anonim',
+      toggleA11y: 'Kirim statistik anonim',
+    },
   }
 }

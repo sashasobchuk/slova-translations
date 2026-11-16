@@ -2966,5 +2966,21 @@ export const fr: TranslationSchema = {
     noRulesArray: 'Pas de tableau rules',
     newerVersion: (version, current) => `Version du format ${version} plus récente que ${current}`,
     noRules: 'Aucune règle avec titre dans le pack',
+  },
+  analytics: {
+    consent: {
+      title: 'Aidez-nous à améliorer Slova',
+      body: 'Nous collectons des statistiques anonymes : quels écrans sont ouverts, où surviennent les erreurs et quelles langues sont choisies. Les textes des mots, les vidéos et les données personnelles ne sont pas collectés, et aucune publicité n\'est utilisée. Vous pourrez modifier votre consentement plus tard.',
+      accept: 'Autoriser',
+      acceptA11y: 'Autoriser l\'analyse',
+      decline: 'Pas maintenant',
+      declineA11y: 'Ne pas autoriser l\'analyse',
+    },
+    settings: {
+      title: 'Analyse anonyme',
+      body: 'Si vous l\'avez autorisé, l\'application envoie à Google Firebase des statistiques anonymes : pays, langues, écrans que vous ouvrez, temps passé dessus, erreurs ou plantages. Les textes des mots et des phrases, les vidéos et les données personnelles ne sont pas envoyés. Désactivez l\'interrupteur ci-dessous et l\'envoi s\'arrêtera. Les données déjà envoyées restent chez Google.',
+      toggle: 'Envoyer des statistiques anonymes',
+      toggleA11y: 'Envoyer des statistiques anonymes',
+    },
   }
 }

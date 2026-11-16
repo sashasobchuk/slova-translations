@@ -2964,5 +2964,21 @@ export const sw: TranslationSchema = {
     noRulesArray: 'Hakuna safu ya sheria (rules array)',
     newerVersion: (version, current) => `Toleo la muundo ${version} ni jipya zaidi kuliko ${current}`,
     noRules: 'Hakuna hata sheria moja kwenye pakiti',
+  },
+  analytics: {
+    consent: {
+      title: 'Tusaidie kuboresha Slova',
+      body: 'Tunakusanya takwimu zisizo na jina: skrini zipi zinafunguliwa, makosa yanatokea wapi, na lugha zipi zimechaguliwa. Maandishi ya maneno, video na data binafsi hayakusanywi, na matangazo hayatumiki. Unaweza kubadilisha ridhaa yako baadaye.',
+      accept: 'Ruhusu',
+      acceptA11y: 'Ruhusu uchanganuzi',
+      decline: 'Si sasa',
+      declineA11y: 'Usiruhusu uchanganuzi',
+    },
+    settings: {
+      title: 'Uchanganuzi usio na jina',
+      body: 'Ukiruhusu, programu hutuma takwimu zisizo na jina kwa Google Firebase: nchi, lugha, skrini unazofungua, muda unaotumia juu yake, na makosa au hitilafu. Maandishi ya maneno na sentensi, video na data binafsi hayatumwi. Zima swichi iliyo hapa chini na utumaji utasimama. Data iliyokwisha tumwa hubaki Google.',
+      toggle: 'Tuma takwimu zisizo na jina',
+      toggleA11y: 'Tuma takwimu zisizo na jina',
+    },
   }
 }
